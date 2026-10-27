@@ -4,7 +4,8 @@
 ## toplanan-veriler | 2. Topladığımız veriler
 <h3>Hesap ve kimlik verileri</h3>
 <ul>
-<li>Ad soyad, e-posta adresi ve (bağlamanız hâlinde) telefon numarası. Telefon numaranızı hesabınıza bağlarsanız, numaranızı doğrulamak ve SMS ile giriş yapabilmeniz için Firebase Authentication üzerinden doğrulama kodu gönderilir.</li>
+<li>Ad soyad, e-posta adresi ve (telefonla giriş yapmanız veya numaranızı hesabınıza bağlamanız hâlinde) telefon numarası.</li>
+<li>Telefonla giriş: Telefon numaranızı girdiğinizde, numaranızı doğrulamak için tek kullanımlık bir kod Appouse'un WhatsApp iş hattı üzerinden WhatsApp mesajı olarak gönderilir. Mesaj, kendi barındırdığımız bir WhatsApp ağ geçidi (OpenWA) aracılığıyla WhatsApp/Meta altyapısı üzerinden iletilir. Kod sunucularımızda yalnızca karma (hash) değeri olarak 5 dakika saklanır ve ardından silinir; kodun kendisi saklanmaz. Doğrulama sonrasında hesabınız Firebase Authentication'da telefon numaranızla oluşturulur veya mevcut hesabınızla eşleştirilir.</li>
 <li>Google ile veya Apple ile giriş yaptığınızda ilgili sağlayıcının bizimle paylaştığı ad ve e-posta adresi. Apple ile girişte "E-postamı gizle" seçeneğini kullanırsanız yalnızca Apple'ın oluşturduğu yönlendirme adresini alırız.</li>
 <li>Kimlik doğrulama hizmetinin oluşturduğu kullanıcı kimliği. Şifreniz Firebase Authentication tarafından saklanır; biz şifrenizi göremeyiz.</li>
 </ul>
@@ -59,7 +60,8 @@
 ## ucuncu-taraflar | 6. Paylaştığımız hizmet sağlayıcılar
 <p>Verilerinizi satmayız. Hizmeti sunabilmek için yalnızca aşağıdaki hizmet sağlayıcılarla, gerekli olduğu ölçüde paylaşırız:</p>
 <table><thead><tr><th>Sağlayıcı</th><th>Amaç</th><th>Paylaşılan veriler</th></tr></thead><tbody>
-<tr><td>Google Firebase Authentication (Google LLC)</td><td>Hesap oluşturma ve giriş (e-posta/şifre, telefon/SMS, Google, Apple)</td><td>E-posta, telefon numarası (bağlanmışsa), ad, kullanıcı kimliği, giriş bilgileri</td></tr>
+<tr><td>Google Firebase Authentication (Google LLC)</td><td>Hesap oluşturma ve giriş (e-posta/şifre, telefon numarası, Google, Apple)</td><td>E-posta, telefon numarası (telefonla giriş yapıldıysa veya bağlanmışsa), ad, kullanıcı kimliği, giriş bilgileri</td></tr>
+<tr><td>WhatsApp (WhatsApp LLC / Meta Platforms, Inc.)</td><td>Telefonla girişte tek kullanımlık doğrulama kodunun Appouse'un WhatsApp iş hattından WhatsApp mesajı olarak gönderilmesi (kendi barındırdığımız OpenWA ağ geçidi aracılığıyla)</td><td>Telefon numarası, doğrulama kodunu içeren mesaj</td></tr>
 <tr><td>Firebase Cloud Messaging (Google LLC)</td><td>Anlık bildirim gönderimi</td><td>Bildirim belirteci, bildirim içeriği</td></tr>
 <tr><td>Google ile Giriş (Google LLC)</td><td>Google hesabıyla giriş</td><td>Google'ın paylaştığı ad, e-posta</td></tr>
 <tr><td>Apple ile Giriş (Apple Inc.)</td><td>Apple hesabıyla giriş</td><td>Apple'ın paylaştığı ad, e-posta veya yönlendirme adresi</td></tr>
@@ -70,12 +72,13 @@
 <p>Döviz kurlarını göstermek için kamuya açık bir kur servisinden (Frankfurter) yalnızca kur verisi alınır; bu servise kişisel verileriniz gönderilmez. Ayrıca kanunen yetkili kamu kurum ve kuruluşlarının talebi hâlinde, mevzuatın gerektirdiği ölçüde bilgi paylaşabiliriz.</p>
 
 ## yurt-disi | 7. Yurt dışına aktarım
-<p>Google, Apple ve RevenueCat'in sunucuları Türkiye dışında (başta ABD olmak üzere) bulunabilir. Bu hizmetlerin kullanılması nedeniyle kişisel verileriniz yurt dışına aktarılabilir. Bu aktarımlar KVKK md. 9'da öngörülen usul ve güvencelere uygun olarak gerçekleştirilir.</p>
+<p>Google, Apple, WhatsApp/Meta ve RevenueCat'in sunucuları Türkiye dışında (başta ABD olmak üzere) bulunabilir. Bu hizmetlerin kullanılması nedeniyle kişisel verileriniz yurt dışına aktarılabilir. Bu aktarımlar KVKK md. 9'da öngörülen usul ve güvencelere uygun olarak gerçekleştirilir.</p>
 
 ## saklama | 8. Saklama süresi
 <ul>
 <li>Hesap ve çiftlik verileriniz, hesabınız açık olduğu sürece saklanır.</li>
 <li>Hesabınızı sildiğinizde, hesabınız, sahibi olduğunuz çiftlikler ve bunlara ait kayıtlar sistemlerimizden silinir. E-posta ile yapılan silme talepleri en geç 30 gün içinde sonuçlandırılır.</li>
+<li>Telefonla giriş doğrulama kodları yalnızca karma (hash) değeri olarak 5 dakika saklanır ve ardından silinir.</li>
 <li>Güvenlik amaçlı sunucu kayıtları sınırlı bir süre tutulur ve ardından silinir.</li>
 <li>Mevzuat gereği saklanması zorunlu veriler, ilgili kanuni süre boyunca saklanır ve süre sonunda silinir veya anonim hâle getirilir.</li>
 </ul>

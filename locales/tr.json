@@ -460,6 +460,10 @@
           "a": "Verileriniz şifreli bağlantı (HTTPS) üzerinden aktarılır ve yalnızca sizin ve yetki verdiğiniz ekip üyelerinin erişebileceği şekilde saklanır. Ayrıntılar için Gizlilik Politikamıza göz atabilirsiniz."
         },
         {
+          "q": "Telefon numaramla giriş yapabilir miyim?",
+          "a": "Evet. Telefon numaranızı girdiğinizde tek kullanımlık doğrulama kodu SMS ile değil, Appouse'un WhatsApp iş hattından WhatsApp mesajı olarak gönderilir. Bu nedenle numaranızda WhatsApp'ın kurulu olması gerekir. Kod 5 dakika geçerlidir."
+        },
+        {
           "q": "Hesabımı nasıl silerim?",
           "a": "Uygulamada Ayarlar → Hesabı Sil adımıyla hesabınızı ve verilerinizi silebilirsiniz. Uygulamaya erişemiyorsanız Hesap ve Veri Silme sayfasındaki e-posta yolunu kullanabilirsiniz."
         }

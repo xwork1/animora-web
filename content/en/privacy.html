@@ -4,7 +4,8 @@
 ## data | 2. Data we collect
 <h3>Account and identity data</h3>
 <ul>
-<li>Name, email address and (if you link it) phone number. If you link a phone number, a verification code is sent via Firebase Authentication so you can verify it and sign in by SMS.</li>
+<li>Name, email address and phone number (if you sign in with your phone or link a number to your account).</li>
+<li>Phone sign-in: when you enter your phone number, a one-time verification code is sent to you as a WhatsApp message from Appouse’s WhatsApp business line. The message is delivered over the WhatsApp/Meta infrastructure through a WhatsApp gateway we host ourselves (OpenWA). The code is stored on our servers only as a hash for 5 minutes and then deleted; the code itself is never stored. After verification, your account is created in, or matched with, Firebase Authentication using your phone number.</li>
 <li>The name and email address shared by Google or Apple when you sign in with them. If you use Apple’s "Hide My Email", we only receive the relay address created by Apple.</li>
 <li>The user ID created by the authentication service. Your password is stored by Firebase Authentication; we cannot see it.</li>
 </ul>
@@ -59,7 +60,8 @@
 ## third-parties | 6. Service providers we share data with
 <p>We do not sell your data. To provide the service we share data only with the following providers, and only as needed:</p>
 <table><thead><tr><th>Provider</th><th>Purpose</th><th>Data shared</th></tr></thead><tbody>
-<tr><td>Google Firebase Authentication (Google LLC)</td><td>Sign-up and sign-in (email/password, phone/SMS, Google, Apple)</td><td>Email, phone number (if linked), name, user ID, sign-in data</td></tr>
+<tr><td>Google Firebase Authentication (Google LLC)</td><td>Sign-up and sign-in (email/password, phone number, Google, Apple)</td><td>Email, phone number (if you signed in with it or linked it), name, user ID, sign-in data</td></tr>
+<tr><td>WhatsApp (WhatsApp LLC / Meta Platforms, Inc.)</td><td>Sending the one-time verification code for phone sign-in as a WhatsApp message from Appouse’s WhatsApp business line (through our self-hosted OpenWA gateway)</td><td>Phone number, message containing the verification code</td></tr>
 <tr><td>Firebase Cloud Messaging (Google LLC)</td><td>Push notifications</td><td>Notification token, notification content</td></tr>
 <tr><td>Sign in with Google (Google LLC)</td><td>Google sign-in</td><td>Name and email shared by Google</td></tr>
 <tr><td>Sign in with Apple (Apple Inc.)</td><td>Apple sign-in</td><td>Name and email or relay address shared by Apple</td></tr>
@@ -70,12 +72,13 @@
 <p>To show exchange rates, the App only retrieves rate data from a public exchange rate service (Frankfurter); no personal data is sent to it. We may also disclose information to competent public authorities where required by law.</p>
 
 ## transfers | 7. International transfers
-<p>Google, Apple and RevenueCat may process data on servers outside Türkiye (mainly in the United States). Such transfers are carried out in line with the procedures and safeguards set out in KVKK art. 9.</p>
+<p>Google, Apple, WhatsApp/Meta and RevenueCat may process data on servers outside Türkiye (mainly in the United States). Such transfers are carried out in line with the procedures and safeguards set out in KVKK art. 9.</p>
 
 ## retention | 8. Retention
 <ul>
 <li>Account and farm data are kept while your account is active.</li>
 <li>When you delete your account, your account, the farms you own and their records are deleted from our systems. Deletion requests sent by email are completed within 30 days at the latest.</li>
+<li>Phone sign-in verification codes are stored only as a hash for 5 minutes and then deleted.</li>
 <li>Security server logs are kept for a limited period and then deleted.</li>
 <li>Data we are legally required to keep is retained for the statutory period and then deleted or anonymised.</li>
 </ul>

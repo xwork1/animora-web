@@ -4,17 +4,17 @@
 ## kategoriler | 2. İşlenen kişisel veri kategorileri
 <table><thead><tr><th>Kategori</th><th>Veriler</th></tr></thead><tbody>
 <tr><td>Kimlik</td><td>Ad soyad</td></tr>
-<tr><td>İletişim</td><td>E-posta adresi, telefon numarası (hesaba bağlanması hâlinde); ekip daveti için girdiğiniz kişilerin e-posta adresi veya telefon numarası</td></tr>
+<tr><td>İletişim</td><td>E-posta adresi, telefon numarası (telefonla giriş yapılması veya hesaba bağlanması hâlinde); ekip daveti için girdiğiniz kişilerin e-posta adresi veya telefon numarası</td></tr>
 <tr><td>Müşteri işlem</td><td>Çiftlik ve işletme bilgileri; hayvan, sağlık, süt, üreme, finans, yem, envanter, takvim ve padok kayıtları; destek talepleri</td></tr>
 <tr><td>Görsel kayıt</td><td>Yüklemeyi seçtiğiniz hayvan fotoğrafları</td></tr>
-<tr><td>İşlem güvenliği</td><td>Kullanıcı kimliği, oturum bilgileri, IP adresi, sunucu erişim ve hata kayıtları, cihaz ve uygulama sürümü bilgisi, bildirim belirteci</td></tr>
+<tr><td>İşlem güvenliği</td><td>Kullanıcı kimliği, oturum bilgileri, IP adresi, sunucu erişim ve hata kayıtları, cihaz ve uygulama sürümü bilgisi, bildirim belirteci, telefonla giriş doğrulama kodunun karma (hash) değeri (5 dakika saklanır, ardından silinir)</td></tr>
 <tr><td>Finans</td><td>Abonelik planı, satın alma ve yenileme durumu, işlem kimlikleri (kart bilgisi işlenmez)</td></tr>
 </tbody></table>
 <p>Biyometrik verileriniz (parmak izi, yüz tanıma) cihazınızda işlenir; Şirket tarafından toplanmaz ve saklanmaz.</p>
 
 ## amaclar | 3. İşleme amaçları
 <ul>
-<li>Üyelik ve hesap işlemlerinin yürütülmesi, kimlik doğrulama,</li>
+<li>Üyelik ve hesap işlemlerinin yürütülmesi, kimlik doğrulama ve telefonla girişte telefon numarasının doğrulanması,</li>
 <li>Uygulama hizmetlerinin sunulması ve sözleşmenin ifası,</li>
 <li>Hatırlatıcı ve hizmet bildirimlerinin gönderilmesi,</li>
 <li>Abonelik ve ödeme süreçlerinin yürütülmesi,</li>
@@ -34,13 +34,13 @@
 </ul>
 
 ## toplama-yontemi | 5. Toplama yöntemi
-<p>Kişisel verileriniz; Animora mobil uygulaması, giriş sağlayıcıları (Google, Apple), uygulama mağazaları ve abonelik altyapısı ile e-posta yoluyla, elektronik ortamda, kısmen otomatik yollarla toplanır.</p>
+<p>Kişisel verileriniz; Animora mobil uygulaması, giriş sağlayıcıları (Google, Apple), telefonla girişte WhatsApp üzerinden gönderilen doğrulama kodu, uygulama mağazaları ve abonelik altyapısı ile e-posta yoluyla, elektronik ortamda, kısmen otomatik yollarla toplanır.</p>
 
 ## aktarim | 6. Kişisel verilerin aktarılması
 <p>Kişisel verileriniz, yukarıdaki amaçlarla sınırlı olarak:</p>
 <ul>
 <li><strong>Yurt içinde:</strong> talep hâlinde kanunen yetkili kamu kurum ve kuruluşlarına,</li>
-<li><strong>Yurt dışında:</strong> kimlik doğrulama ve bildirim hizmetleri için Google LLC (Firebase), Apple ile giriş için Apple Inc., abonelik yönetimi için RevenueCat, Inc. hizmet sağlayıcılarına</li>
+<li><strong>Yurt dışında:</strong> kimlik doğrulama ve bildirim hizmetleri için Google LLC (Firebase), Apple ile giriş için Apple Inc., telefonla girişte doğrulama kodunun Appouse'un WhatsApp iş hattından (kendi barındırdığımız OpenWA ağ geçidi aracılığıyla) WhatsApp mesajı olarak iletilmesi için WhatsApp LLC / Meta Platforms, Inc., abonelik yönetimi için RevenueCat, Inc. hizmet sağlayıcılarına</li>
 </ul>
 <p>aktarılabilir. Yurt dışına aktarımlar KVKK md. 9'da öngörülen usul ve güvencelere (uygun güvence sağlanması ve gerektiği hâllerde standart sözleşme dâhil) uygun olarak gerçekleştirilir. Ekip üyeliği kapsamında, kayıtlarınız yalnızca aynı çiftliğe yetki verdiğiniz kişilerce görüntülenebilir.</p>
 

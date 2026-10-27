@@ -54,10 +54,10 @@
     },
     "kvkk": {
       "label": "KVKK Information Notice",
-      "title": "KVKK Information Notice — Animora",
+      "title": "Information Notice under Turkish Personal Data Protection Law No. 6698 (KVKK) — Animora",
       "description": "Information notice for Animora users under the Turkish Personal Data Protection Law No. 6698 (KVKK).",
       "eyebrow": "Legal",
-      "h1": "KVKK Information Notice",
+      "h1": "Information Notice under Turkish Personal Data Protection Law No. 6698",
       "intro": "Prepared to inform Animora users under article 10 of the Turkish Personal Data Protection Law No. 6698 (\"KVKK\") and the Communiqué on the Procedures and Principles for Fulfilling the Obligation to Inform. This is a translation; the Turkish version prevails."
     },
     "terms": {
@@ -458,6 +458,10 @@
         {
           "q": "Is my data safe?",
           "a": "Your data is transferred over encrypted connections (HTTPS) and is only accessible to you and the team members you authorise. See our Privacy Policy for details."
+        },
+        {
+          "q": "Can I sign in with my phone number?",
+          "a": "Yes. When you enter your phone number, a one-time verification code is sent as a WhatsApp message from Appouse’s WhatsApp business line, not by SMS, so WhatsApp must be installed on that number. The code is valid for 5 minutes."
         },
         {
           "q": "How do I delete my account?",
