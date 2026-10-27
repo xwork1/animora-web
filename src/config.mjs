@@ -1,7 +1,7 @@
 // Dil dışı site ayarları: adres, diller ve sayfa yolları. Kullanıcıya görünen metin içermez;
 // tüm metinler locales/{lang}.json ve content/{lang}/*.html dosyalarındadır.
 export const SITE = 'https://animora.appouse.com';
-export const EMAIL = 'mustafa.ulukaya@appouse.com';
+export const EMAIL = 'info@appouse.com';
 export const DEFAULT_LANG = 'tr';
 export const LANGS = ['tr', 'en'];
 
