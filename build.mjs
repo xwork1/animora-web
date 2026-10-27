@@ -111,8 +111,9 @@ ${canonical ? `<meta property="og:url" content="${canonical}">` : ''}
 ${others.map((l) => `<meta property="og:locale:alternate" content="${locales[l].meta.ogLocale}">`).join('\n')}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 ${jsonLd}
@@ -177,7 +178,28 @@ for (const lang of LANGS) {
 
 for (const f of readdirSync(join(root, 'src', 'fonts'))) copyFileSync(join(root, 'src', 'fonts', f), join(out, 'assets', 'fonts', f));
 for (const f of ['site.css', 'site.js', ...LANGS.map((l) => `og-${l}.png`)]) copyFileSync(join(root, 'src', f), join(out, 'assets', f));
-for (const f of ['favicon.svg', 'favicon-48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png']) copyFileSync(join(root, 'src', f), join(out, f));
+// İkonlar hem /assets/ altında (HTML ve manifest bağlantıları) hem kökte (tarayıcıların varsayılan arama yolu) sunulur.
+const ICONS = ['favicon-48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png'];
+for (const f of ICONS) {
+  copyFileSync(join(root, 'src', f), join(out, 'assets', f));
+  copyFileSync(join(root, 'src', f), join(out, f));
+}
+copyFileSync(join(root, 'src', 'favicon.svg'), join(out, 'favicon.svg'));
+const t0 = locales[DEFAULT_LANG];
+writeFileSync(join(out, 'site.webmanifest'), JSON.stringify({
+  name: t0.site.brand,
+  short_name: t0.site.brand,
+  description: t0.jsonLd.description,
+  lang: DEFAULT_LANG,
+  start_url: '/',
+  display: 'browser',
+  background_color: '#f7f4ec',
+  theme_color: '#4e8a3e',
+  icons: [
+    { src: '/assets/icon-192.png', sizes: '192x192', type: 'image/png' },
+    { src: '/assets/icon-512.png', sizes: '512x512', type: 'image/png' },
+  ],
+}, null, 2));
 
 const sitemapEntries = Object.values(ROUTES).map((r) =>
   LANGS.map((l) => `  <url><loc>${SITE + r[l]}</loc>${LANGS.map((x) => `<xhtml:link rel="alternate" hreflang="${x}" href="${SITE + r[x]}"/>`).join('')}</url>`).join('\n')).join('\n');
