@@ -36,56 +36,59 @@ const nav = (labels, active) =>
 const bars = (values, on) =>
   `<div class="s-bars">${values.map((v, i) => `<span class="${i === on ? 'on' : ''}" style="height:${v}%"></span>`).join('')}</div>`;
 
-// Ekran temsilleri: gerçek uygulama arayüzünün sadeleştirilmiş HTML çizimleri (örnek verilerle).
-export function phoneDashboard(x) {
+// Ekran temsilleri: uygulama arayüzünün sadeleştirilmiş HTML çizimleri.
+// Tüm metin ve örnek değerler locales/{lang}.json içindeki home.mock alanından gelir.
+const sm = (name) => icons[name].replace('<svg', '<svg width="13" height="13"');
+
+export function phoneDashboard(x, navLabels) {
   return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
-  <div class="s-top"><div><div class="s-hello">${x.hello}</div><div class="s-title">${x.farm}</div></div><div class="s-bell" style="color:#4e8a3e">${icons.bell.replace('<svg', '<svg width="14" height="14"')}</div></div>
+  <div class="s-top"><div><div class="s-hello">${x.hello}</div><div class="s-title">${x.farm}</div></div><div class="s-bell" style="color:#4e8a3e">${sm('bell')}</div></div>
   <div class="s-grid">
-    <div class="s-card"><div class="s-ico" style="background:#e2eedb;color:#3b6e2e">${icons.tag.replace('<svg', '<svg width="13" height="13"')}</div><div class="s-big">142</div><div class="s-muted">${x.animals}</div></div>
-    <div class="s-card"><div class="s-ico" style="background:#dceaf5;color:#2f7fb8">${icons.drop.replace('<svg', '<svg width="13" height="13"')}</div><div class="s-big">850 L</div><div class="s-muted">${x.milk}</div></div>
+    <div class="s-card"><div class="s-ico" style="background:#e2eedb;color:#3b6e2e">${sm('tag')}</div><div class="s-big">${x.animalsValue}</div><div class="s-muted">${x.animals}</div></div>
+    <div class="s-card"><div class="s-ico" style="background:#dceaf5;color:#2f7fb8">${sm('drop')}</div><div class="s-big">${x.milkValue}</div><div class="s-muted">${x.milk}</div></div>
   </div>
   <div class="s-label">${x.tasks}</div>
-  <div class="s-row"><div class="s-ico" style="background:#f6dedb;color:#b8473f">${icons.syringe.replace('<svg', '<svg width="13" height="13"')}</div><div class="s-grow"><b>${x.t1}</b><span class="s-muted">${x.t1s}</span></div><span class="s-tag" style="background:#f6dedb;color:#b8473f">${x.today}</span></div>
-  <div class="s-row"><div class="s-ico" style="background:#ede0f4;color:#8a4fae">${icons.heart.replace('<svg', '<svg width="13" height="13"')}</div><div class="s-grow"><b>${x.t2}</b><span class="s-muted">${x.t2s}</span></div><span class="s-tag" style="background:#f6e7c8;color:#9a6a17">${x.tomorrow}</span></div>
-  <div class="s-row"><div class="s-ico" style="background:#f6e7c8;color:#9a6a17">${icons.wheat.replace('<svg', '<svg width="13" height="13"')}</div><div class="s-grow"><b>${x.t3}</b><span class="s-muted">${x.t3s}</span></div><span class="s-tag" style="background:#e2eedb;color:#3b6e2e">${x.ok}</span></div>
-  ${nav(x.nav, 0)}
+  <div class="s-row"><div class="s-ico" style="background:#f6dedb;color:#b8473f">${sm('syringe')}</div><div class="s-grow"><b>${x.t1}</b><span class="s-muted">${x.t1s}</span></div><span class="s-tag" style="background:#f6dedb;color:#b8473f">${x.today}</span></div>
+  <div class="s-row"><div class="s-ico" style="background:#ede0f4;color:#8a4fae">${sm('heart')}</div><div class="s-grow"><b>${x.t2}</b><span class="s-muted">${x.t2s}</span></div><span class="s-tag" style="background:#f6e7c8;color:#9a6a17">${x.tomorrow}</span></div>
+  <div class="s-row"><div class="s-ico" style="background:#f6e7c8;color:#9a6a17">${sm('wheat')}</div><div class="s-grow"><b>${x.t3}</b><span class="s-muted">${x.t3s}</span></div><span class="s-tag" style="background:#e2eedb;color:#3b6e2e">${x.ok}</span></div>
+  ${nav(navLabels, 0)}
 </div></div>`;
 }
 
-export function phoneMilk(x) {
+export function phoneMilk(x, navLabels) {
   return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
   <div><div class="s-hello" style="color:#4e8a3e;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
-  <div class="s-hero"><div class="s-muted">${x.total}</div><div class="s-big" style="font-size:24px">1.245 L</div><div class="s-muted">${x.target}</div></div>
+  <div class="s-hero"><div class="s-muted">${x.total}</div><div class="s-big" style="font-size:24px">${x.totalValue}</div><div class="s-muted">${x.target}</div></div>
   <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.avg}</div><div class="s-big" style="font-size:17px">28,4 L</div></div>
-    <div class="s-card"><div class="s-muted">${x.quality}</div><div class="s-big" style="font-size:13px">%3,8 · %3,2</div><div class="s-muted">${x.fatProt}</div></div>
+    <div class="s-card"><div class="s-muted">${x.avg}</div><div class="s-big" style="font-size:17px">${x.avgValue}</div></div>
+    <div class="s-card"><div class="s-muted">${x.quality}</div><div class="s-big" style="font-size:13px">${x.qualityValue}</div><div class="s-muted">${x.fatProt}</div></div>
   </div>
   <div class="s-card"><div class="s-label">${x.weekly}</div>${bars([62, 70, 66, 78, 84, 74, 80], 4)}<div class="s-days">${x.days.map((d) => `<span>${d}</span>`).join('')}</div></div>
-  ${nav(x.nav, 2)}
+  ${nav(navLabels, 2)}
 </div></div>`;
 }
 
-export function phoneRepro(x) {
+export function phoneRepro(x, navLabels) {
   return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
   <div><div class="s-hello" style="color:#8a4fae;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
   <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.pregnant}</div><div class="s-big">38</div></div>
-    <div class="s-card"><div class="s-muted">${x.dueSoon}</div><div class="s-big">6</div></div>
+    <div class="s-card"><div class="s-muted">${x.pregnant}</div><div class="s-big">${x.pregnantValue}</div></div>
+    <div class="s-card"><div class="s-muted">${x.dueSoon}</div><div class="s-big">${x.dueSoonValue}</div></div>
   </div>
-  ${x.rows.map((r) => `<div class="s-card"><div style="display:flex;justify-content:space-between"><b>${r[0]}</b><span class="s-tag" style="background:#ede0f4;color:#8a4fae">${r[1]}</span></div><div class="s-muted">${r[2]}</div><div class="s-progress"><span style="width:${r[3]}%"></span></div></div>`).join('')}
-  ${nav(x.nav, 1)}
+  ${x.rows.map((r) => `<div class="s-card"><div style="display:flex;justify-content:space-between"><b>${r.id}</b><span class="s-tag" style="background:#ede0f4;color:#8a4fae">${r.day}</span></div><div class="s-muted">${r.text}</div><div class="s-progress"><span style="width:${r.progress}%"></span></div></div>`).join('')}
+  ${nav(navLabels, 1)}
 </div></div>`;
 }
 
-export function phoneFinance(x) {
+export function phoneFinance(x, navLabels) {
   return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
   <div><div class="s-hello" style="color:#2f7fb8;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
-  <div class="s-card" style="background:#1f3a1a;color:#eef3e8"><div class="s-muted" style="color:#b9c8b0">${x.net}</div><div class="s-big" style="font-size:22px">₺184.250</div><div class="s-muted" style="color:#b9c8b0">${x.period}</div></div>
+  <div class="s-card" style="background:#1f3a1a;color:#eef3e8"><div class="s-muted" style="color:#b9c8b0">${x.net}</div><div class="s-big" style="font-size:22px">${x.netValue}</div><div class="s-muted" style="color:#b9c8b0">${x.period}</div></div>
   <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.income}</div><div class="s-big" style="font-size:15px;color:#3b6e2e">₺412.900</div></div>
-    <div class="s-card"><div class="s-muted">${x.expense}</div><div class="s-big" style="font-size:15px;color:#b8473f">₺228.650</div></div>
+    <div class="s-card"><div class="s-muted">${x.income}</div><div class="s-big" style="font-size:15px;color:#3b6e2e">${x.incomeValue}</div></div>
+    <div class="s-card"><div class="s-muted">${x.expense}</div><div class="s-big" style="font-size:15px;color:#b8473f">${x.expenseValue}</div></div>
   </div>
-  ${x.rows.map((r) => `<div class="s-row"><div class="s-grow"><b>${r[0]}</b><span class="s-muted">${r[1]}</span></div><b style="color:${r[2].startsWith('+') ? '#3b6e2e' : '#b8473f'}">${r[2]}</b></div>`).join('')}
-  ${nav(x.nav, 3)}
+  ${x.rows.map((r) => `<div class="s-row"><div class="s-grow"><b>${r.title}</b><span class="s-muted">${r.text}</span></div><b style="color:${r.positive ? '#3b6e2e' : '#b8473f'}">${r.amount}</b></div>`).join('')}
+  ${nav(navLabels, 3)}
 </div></div>`;
 }

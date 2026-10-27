@@ -1,0 +1,478 @@
+{
+  "meta": {
+    "lang": "en",
+    "ogLocale": "en_US",
+    "langName": "English",
+    "updated": "October 28, 2026"
+  },
+  "site": {
+    "brand": "Animora",
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "toc": "On this page",
+    "updated": "Last updated: {date}",
+    "language": "Language",
+    "footTagline": "Farm and herd management app for cattle, sheep and goat operations.",
+    "footProduct": "Product",
+    "footLegal": "Legal",
+    "copyright": "© {year} Appouse Teknoloji Ltd. Şti. All rights reserved.",
+    "by": "Animora is a product of Appouse Teknoloji Ltd. Şti."
+  },
+  "nav": {
+    "features": "Features",
+    "plans": "Plans",
+    "faq": "FAQ",
+    "faqLong": "Frequently asked questions",
+    "support": "Support",
+    "supportLong": "Support and contact"
+  },
+  "anchors": {
+    "features": "features",
+    "screens": "screens",
+    "plans": "plans",
+    "faq": "faq",
+    "contact": "contact",
+    "subscriptions": "subscriptions"
+  },
+  "controller": {
+    "name": "APPOUSE TEKNOLOJİ LİMİTED ŞİRKETİ (Appouse Teknoloji Ltd. Şti.)",
+    "address": "Altıntepe Mahallesi, İstasyon Yolu Sokak No: 3 Daire: 1, Maltepe / Istanbul, Türkiye",
+    "emailLabel": "Email:"
+  },
+  "pages": {
+    "home": {
+      "title": "Animora — Farm and Herd Management App",
+      "description": "Animal records, health and vaccines, milk production, breeding and pregnancy, finance, feed and team management in one app. Coming soon to iOS and Android."
+    },
+    "privacy": {
+      "label": "Privacy Policy",
+      "title": "Privacy Policy — Animora",
+      "description": "What personal data the Animora mobile app collects, how it is used and shared, and your rights.",
+      "eyebrow": "Legal",
+      "h1": "Privacy Policy",
+      "intro": "This policy explains how personal data is processed in the Animora mobile app (the \"App\") and on this website. If there is any inconsistency, the Turkish version prevails."
+    },
+    "kvkk": {
+      "label": "KVKK Information Notice",
+      "title": "KVKK Information Notice — Animora",
+      "description": "Information notice for Animora users under the Turkish Personal Data Protection Law No. 6698 (KVKK).",
+      "eyebrow": "Legal",
+      "h1": "KVKK Information Notice",
+      "intro": "Prepared to inform Animora users under article 10 of the Turkish Personal Data Protection Law No. 6698 (\"KVKK\") and the Communiqué on the Procedures and Principles for Fulfilling the Obligation to Inform. This is a translation; the Turkish version prevails."
+    },
+    "terms": {
+      "label": "Terms of Use",
+      "title": "Terms of Use — Animora",
+      "description": "Terms of use of the Animora mobile app, including subscriptions, auto-renewal and cancellation.",
+      "eyebrow": "Legal",
+      "h1": "Terms of Use",
+      "intro": "These terms govern the relationship between you and APPOUSE TEKNOLOJİ LİMİTED ŞİRKETİ (\"Appouse\", \"we\"), which develops and operates the Animora mobile app (the \"App\"). By using the App you accept these terms. If there is any inconsistency, the Turkish version prevails."
+    },
+    "deleteAccount": {
+      "label": "Account and Data Deletion",
+      "title": "Account and Data Deletion — Animora",
+      "description": "How to delete your Animora account and data in the app or by email.",
+      "eyebrow": "Account",
+      "h1": "Account and Data Deletion",
+      "intro": "You can delete your Animora account and related data at any time. This page explains how to request account and data deletion for the Animora app by Appouse Teknoloji Ltd. Şti."
+    },
+    "support": {
+      "label": "Support and Contact",
+      "title": "Support and Contact — Animora",
+      "description": "Support, frequently asked questions and contact details for the Animora app.",
+      "eyebrow": "Support",
+      "h1": "Support and Contact",
+      "intro": "We are here for your questions, bug reports and suggestions about Animora."
+    },
+    "cookies": {
+      "label": "Cookie Policy",
+      "title": "Cookie Policy — Animora",
+      "description": "How the animora.appouse.com website uses cookies and similar technologies.",
+      "eyebrow": "Legal",
+      "h1": "Cookie Policy",
+      "intro": "This policy applies to the animora.appouse.com website."
+    },
+    "notFound": {
+      "title": "Page not found — Animora",
+      "description": "The page you are looking for could not be found.",
+      "h1": "404",
+      "text": "The page you are looking for could not be found. It may have moved or been removed.",
+      "home": "Back to home"
+    }
+  },
+  "jsonLd": {
+    "description": "Farm and herd management app for cattle, sheep and goat operations.",
+    "os": "iOS, Android"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Farm and herd management",
+      "titleStart": "Every record of your herd,",
+      "titleEm": "in your pocket.",
+      "lead": "Animora brings everything on your farm into one mobile app: animal records, health and vaccines, milk yield, breeding calendar, finance and your team.",
+      "note": "Coming to iOS and Android. You will be able to start with the Free plan.",
+      "chipA": {
+        "title": "Expected calving",
+        "text": "TR-089 · in 6 days"
+      },
+      "chipB": {
+        "title": "Reminder",
+        "text": "Tomorrow 09:30 — vaccine"
+      }
+    },
+    "store": {
+      "soon": "Soon",
+      "apple": {
+        "platform": "iOS",
+        "name": "App Store",
+        "aria": "App Store — coming soon"
+      },
+      "google": {
+        "platform": "Android",
+        "name": "Google Play",
+        "aria": "Google Play — coming soon"
+      }
+    },
+    "values": [
+      {
+        "icon": "phone",
+        "tone": "t-green",
+        "title": "Everything in one place",
+        "text": "One tidy record instead of notebooks, diaries and spreadsheets."
+      },
+      {
+        "icon": "bell",
+        "tone": "t-wheat",
+        "title": "Never miss a task",
+        "text": "Timely reminders for vaccines, checks and births."
+      },
+      {
+        "icon": "users",
+        "tone": "t-sky",
+        "title": "Work as a team",
+        "text": "Your workers and your vet work on the same records."
+      }
+    ],
+    "features": {
+      "eyebrow": "Features",
+      "title": "Everything your farm needs",
+      "text": "Animora helps you follow the daily operation of your farm and the biological cycle of your animals together.",
+      "items": [
+        {
+          "icon": "tag",
+          "tone": "t-green",
+          "title": "Animal records",
+          "text": "An ID card for every animal with ear tag number, species, breed, birth date, parents and group. Add photos and find any animal in seconds."
+        },
+        {
+          "icon": "syringe",
+          "tone": "t-rose",
+          "title": "Health, vaccines and treatments",
+          "text": "Vaccination schedules, examinations, diagnoses and treatments, together with medicines and withdrawal periods."
+        },
+        {
+          "icon": "drop",
+          "tone": "t-sky",
+          "title": "Milk production",
+          "text": "Record milkings per animal or per herd; follow daily and weekly yield and your top producers."
+        },
+        {
+          "icon": "heart",
+          "tone": "t-plum",
+          "title": "Breeding and pregnancy",
+          "text": "Heat, insemination, pregnancy checks, dry-off and calving events; expected calving dates are calculated automatically."
+        },
+        {
+          "icon": "calendar",
+          "tone": "t-wheat",
+          "title": "Calendar and reminders",
+          "text": "See upcoming vaccinations, checks and births in one calendar and get notified on time."
+        },
+        {
+          "icon": "wallet",
+          "tone": "t-green",
+          "title": "Finance",
+          "text": "Track income and expenses by category and see profitability for your farm and for each animal."
+        },
+        {
+          "icon": "wheat",
+          "tone": "t-wheat",
+          "title": "Feed and rations",
+          "text": "Use the feed library and ration calculator to build a feeding plan for each group."
+        },
+        {
+          "icon": "box",
+          "tone": "t-sky",
+          "title": "Inventory",
+          "text": "Keep track of feed, medicine and supply stock and spot low items in time."
+        },
+        {
+          "icon": "file",
+          "tone": "t-rose",
+          "title": "Reports and export",
+          "text": "Export herd, health, milk and finance reports as PDF or Excel and share them."
+        },
+        {
+          "icon": "users",
+          "tone": "t-plum",
+          "title": "Team management",
+          "text": "Invite workers and partners and give each person the permissions their role needs."
+        },
+        {
+          "icon": "steth",
+          "tone": "t-green",
+          "title": "Veterinarian mode",
+          "text": "Your veterinarian can join your farm and send examinations, diagnoses and treatment plans directly in the app."
+        },
+        {
+          "icon": "grid",
+          "tone": "t-wheat",
+          "title": "Paddock Plan",
+          "text": "Map your barns and paddocks and see where every animal is at a glance."
+        }
+      ]
+    },
+    "screens": {
+      "eyebrow": "Inside the app",
+      "title": "Simple screens, clear information",
+      "text": "In the field, in the barn or in the office, get to what you need in a few taps.",
+      "note": "Images are illustrations of the app interface and contain sample data.",
+      "captions": {
+        "milk": "Milk yield",
+        "repro": "Breeding and pregnancy",
+        "finance": "Finance"
+      }
+    },
+    "mock": {
+      "nav": [
+        "Home",
+        "Animals",
+        "Milk",
+        "Finance",
+        "Settings"
+      ],
+      "dashboard": {
+        "aria": "Animora home screen: total animals, today’s milk and upcoming tasks",
+        "hello": "Welcome back",
+        "farm": "Green Valley Farm",
+        "animalsValue": "142",
+        "animals": "Total animals",
+        "milkValue": "850 L",
+        "milk": "Today’s milk",
+        "tasks": "Upcoming tasks",
+        "t1": "FMD vaccination",
+        "t1s": "Group A · 12 animals",
+        "today": "Today",
+        "t2": "Pregnancy check",
+        "t2s": "TR-154, TR-158",
+        "tomorrow": "Tomorrow",
+        "t3": "Ration updated",
+        "t3s": "Lactating group",
+        "ok": "Done"
+      },
+      "milk": {
+        "aria": "Milk production screen",
+        "eyebrow": "Farm management",
+        "title": "Milk Production",
+        "total": "Today’s total",
+        "totalValue": "1,245 L",
+        "target": "Target: 1,200 L",
+        "avg": "Per cow",
+        "avgValue": "28.4 L",
+        "quality": "Quality",
+        "qualityValue": "3.8% · 3.2%",
+        "fatProt": "Fat · Protein",
+        "weekly": "Weekly trend",
+        "days": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      },
+      "repro": {
+        "aria": "Breeding and pregnancy screen",
+        "eyebrow": "Breeding",
+        "title": "Pregnancy Tracking",
+        "pregnant": "Pregnant",
+        "pregnantValue": "38",
+        "dueSoon": "Due in 30 days",
+        "dueSoonValue": "6",
+        "rows": [
+          {
+            "id": "TR-089",
+            "day": "Day 274",
+            "text": "Expected calving: Nov 3",
+            "progress": 96
+          },
+          {
+            "id": "TR-154",
+            "day": "Day 181",
+            "text": "Dry-off: Nov 21",
+            "progress": 64
+          },
+          {
+            "id": "TR-212",
+            "day": "Day 42",
+            "text": "Pregnancy check: tomorrow",
+            "progress": 15
+          }
+        ]
+      },
+      "finance": {
+        "aria": "Finance screen",
+        "eyebrow": "Finance",
+        "title": "Income and Expenses",
+        "net": "Net profit",
+        "netValue": "₺184,250",
+        "period": "This year",
+        "income": "Income",
+        "incomeValue": "₺412,900",
+        "expense": "Expenses",
+        "expenseValue": "₺228,650",
+        "rows": [
+          {
+            "title": "Milk sales",
+            "text": "Dairy · Oct 24",
+            "amount": "+₺38,400",
+            "positive": true
+          },
+          {
+            "title": "Feed purchase",
+            "text": "Silage · Oct 22",
+            "amount": "−₺21,750",
+            "positive": false
+          },
+          {
+            "title": "Veterinary",
+            "text": "Vaccine · Oct 20",
+            "amount": "−₺4,200",
+            "positive": false
+          }
+        ]
+      }
+    },
+    "audience": {
+      "eyebrow": "Who it is for",
+      "title": "From cattle to small ruminants",
+      "text": "From family farms to professional operations, for anyone who wants to keep proper track of their animals.",
+      "items": [
+        {
+          "title": "Cattle",
+          "text": "Dairy and beef"
+        },
+        {
+          "title": "Buffalo",
+          "text": "Dairy and beef"
+        },
+        {
+          "title": "Sheep",
+          "text": "Flocks and lambing"
+        },
+        {
+          "title": "Goats",
+          "text": "Dairy and kidding"
+        }
+      ]
+    },
+    "plans": {
+      "eyebrow": "Plans",
+      "title": "Choose the plan that fits your farm",
+      "text": "Start for free and upgrade as your herd grows.",
+      "items": [
+        {
+          "name": "Free",
+          "desc": "Basic features",
+          "featured": false,
+          "features": [
+            "7 animal records",
+            "Basic health tracking (view only)",
+            "Calendar (5 events/month)",
+            "2 groups"
+          ]
+        },
+        {
+          "name": "Basic",
+          "badge": "Most Popular",
+          "desc": "Standard features",
+          "featured": true,
+          "features": [
+            "50 animal records",
+            "Add health records",
+            "Financial tracking",
+            "Basic reports",
+            "Reminders"
+          ]
+        },
+        {
+          "name": "Pro",
+          "desc": "All features",
+          "featured": false,
+          "features": [
+            "Unlimited animals",
+            "All Basic features",
+            "Treatment protocols",
+            "Ration calculator",
+            "Profitability analysis",
+            "PDF/Excel export",
+            "Multiple farms",
+            "Team management"
+          ]
+        }
+      ],
+      "note": "Prices will be shown on the App Store and Google Play when the app launches. Paid plans are purchased monthly or yearly through your store account, renew automatically and can be cancelled any time. Details:",
+      "noteLink": "Terms of Use",
+      "noteEnd": "."
+    },
+    "soon": {
+      "title": "Coming soon: smart sensor integration",
+      "text": "We are working on sensor integration for barn conditions and animal health. This feature is not available yet; we will announce it here when it is ready."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Which animals is Animora for?",
+          "a": "Animora is built for cattle and buffalo as well as sheep and goat operations. You can track animals individually or in groups."
+        },
+        {
+          "q": "When will the app be available?",
+          "a": "Animora is being prepared for launch. The store buttons on this page will be activated once the iOS (App Store) and Android (Google Play) versions are published."
+        },
+        {
+          "q": "Can I use it for free?",
+          "a": "Yes. The Free plan covers basic animal records, viewing health records and limited calendar use for small herds. Upgrade to Basic or Pro when you need more."
+        },
+        {
+          "q": "How are subscriptions billed and cancelled?",
+          "a": "Paid plans are purchased through your App Store or Google Play account and renew automatically at the end of each period. You can cancel any time in your store account settings; cancellation takes effect at the end of the current period."
+        },
+        {
+          "q": "Can my team and my vet use it too?",
+          "a": "Yes. Invite your workers and assign permissions by role. Veterinarian mode lets your vet join your farm and record examinations and treatments directly."
+        },
+        {
+          "q": "Is my data safe?",
+          "a": "Your data is transferred over encrypted connections (HTTPS) and is only accessible to you and the team members you authorise. See our Privacy Policy for details."
+        },
+        {
+          "q": "How do I delete my account?",
+          "a": "In the app go to Settings → Delete Account. If you cannot access the app, use the email option on the Account and Data Deletion page."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Questions?",
+      "textStart": "Write to us for information about Animora, suggestions or support. For more help, visit the",
+      "textLink": "Support",
+      "textEnd": "page.",
+      "emailLabel": "Email",
+      "emailSubject": "Animora",
+      "helpLabel": "Help center"
+    }
+  }
+}

@@ -2,11 +2,37 @@
 
 Animora (çiftlik ve sürü yönetimi uygulaması) tanıtım sitesi ve yasal sayfaları. Bağımlılıksız statik site: `node build.mjs` → `dist/`, nginx ile sunulur (Dockerfile).
 
-- İçerik: `src/pages-tr.mjs`, `src/pages-en.mjs`
-- Veri sorumlusu ve site adresi: `src/content.mjs`
-- Stil: `src/site.css`
+## Çok dillilik
 
-Yasal sayfalar: `/gizlilik`, `/kvkk`, `/kullanim-kosullari`, `/hesap-silme`, `/destek`, `/cerez-politikasi` ve İngilizce `/en/privacy`, `/en/terms`, `/en/delete-account`, `/en/support`, `/en/cookies`.
+Diller uygulamayla aynıdır: `tr` (varsayılan, kökte) ve `en` (`/en/` altında). Şablonlarda kullanıcıya görünen metin bulunmaz.
 
-Yerel önizleme: `node build.mjs && npx serve dist`
+- Arayüz metinleri, meta başlık/açıklamalar, 404 sayfası: `locales/tr.json`, `locales/en.json`
+- Yasal sayfa gövdeleri: `content/{tr,en}/{privacy,kvkk,terms,deleteAccount,support,cookies}.html`
+  - Biçim: `## bolum-id | Bölüm başlığı` satırı ve altında HTML.
+  - Yer tutucular: `{{controller}}` (veri sorumlusu kutusu), `{{email}}`, `{{emailAddr}}`, `{{url:privacy}}` (geçerli dildeki sayfa adresi).
+- Dil dışı ayarlar (site adresi, iletişim e-postası, sayfa yolları): `src/config.mjs`
+- Şablonlar: `build.mjs` (sayfa iskeleti), `src/home.mjs` (ana sayfa), `src/ui.mjs` (ikonlar, telefon çizimleri)
+
+Yeni dil eklemek için: `locales/{dil}.json` ve `content/{dil}/` oluşturun, `src/config.mjs` içindeki `LANGS` ve `ROUTES`'a ekleyin.
+
+## Denetim
+
+```bash
+node build.mjs && node scripts/check-i18n.mjs
+```
+
+`check-i18n` şunları doğrular: dil dosyalarında anahtar eşliği, yasal içerik bölüm sayılarının eşliği, şablonlarda sabit görünür metin (etiket arası ve `aria-label`/`alt`/`title`/`placeholder`/`content`) bulunmaması, üretilen HTML'deki her görünür metnin dil/içerik dosyalarından gelmesi. Docker derlemesi bu denetim başarısız olursa durur.
+
+## Sayfalar
+
+| Sayfa | Türkçe | İngilizce |
+|---|---|---|
+| Ana sayfa | `/` | `/en/` |
+| Gizlilik Politikası | `/gizlilik` | `/en/privacy` |
+| KVKK Aydınlatma Metni | `/kvkk` | `/en/kvkk` |
+| Kullanım Koşulları | `/kullanim-kosullari` | `/en/terms` |
+| Hesap ve Veri Silme | `/hesap-silme` | `/en/delete-account` |
+| Destek | `/destek` | `/en/support` |
+| Çerez Politikası | `/cerez-politikasi` | `/en/cookies` |
+
 Yayın: Coolify (Dockerfile build pack), https://animora.appouse.com

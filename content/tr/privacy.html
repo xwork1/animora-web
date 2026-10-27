@@ -1,0 +1,103 @@
+## veri-sorumlusu | 1. Veri sorumlusu
+<p>Animora, aşağıdaki şirket tarafından geliştirilir ve işletilir. Kişisel verileriniz bakımından veri sorumlusu bu şirkettir.</p>{{controller}}<p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki ayrıntılı bilgilendirme için <a href="{{url:kvkk}}">KVKK Aydınlatma Metni</a>'ne bakabilirsiniz.</p>
+
+## toplanan-veriler | 2. Topladığımız veriler
+<h3>Hesap ve kimlik verileri</h3>
+<ul>
+<li>Ad soyad, e-posta adresi ve (bağlamanız hâlinde) telefon numarası. Telefon numaranızı hesabınıza bağlarsanız, numaranızı doğrulamak ve SMS ile giriş yapabilmeniz için Firebase Authentication üzerinden doğrulama kodu gönderilir.</li>
+<li>Google ile veya Apple ile giriş yaptığınızda ilgili sağlayıcının bizimle paylaştığı ad ve e-posta adresi. Apple ile girişte "E-postamı gizle" seçeneğini kullanırsanız yalnızca Apple'ın oluşturduğu yönlendirme adresini alırız.</li>
+<li>Kimlik doğrulama hizmetinin oluşturduğu kullanıcı kimliği. Şifreniz Firebase Authentication tarafından saklanır; biz şifrenizi göremeyiz.</li>
+</ul>
+<h3>Çiftlik ve işletme verileri</h3>
+<ul>
+<li>Uygulamaya girdiğiniz çiftlik bilgileri (çiftlik adı, işletme bilgileri, para birimi tercihi).</li>
+<li>Hayvan kayıtları: küpe numarası, tür, ırk, doğum, soy, grup, sağlık, aşı, tedavi, süt, üreme ve gebelik kayıtları.</li>
+<li>Finans, yem, rasyon, envanter, takvim ve padok kayıtları.</li>
+<li>Yüklemeyi seçtiğiniz hayvan fotoğrafları, sağlık kayıtlarına eklediğiniz dosyalar ve notlar.</li>
+</ul>
+<h3>Ekip verileri</h3>
+<ul><li>Ekibinize davet ettiğiniz kişilerin ad ve iletişim bilgileri (e-posta adresi veya telefon numarası), rolleri ve yetkileri; ekip üyelerinin ve veteriner hekimlerin hangi kaydı oluşturduğu bilgisi.</li></ul>
+<h3>Abonelik verileri</h3>
+<ul><li>Abonelik planınız, satın alma ve yenileme durumu, işlem kimlikleri. Ödemeler Apple veya Google tarafından alınır; kart bilgileriniz bize veya RevenueCat'e iletilmez.</li></ul>
+<h3>Cihaz ve teknik veriler</h3>
+<ul>
+<li>Bildirim gönderebilmek için cihazınıza ait anlık bildirim (push) belirteci.</li>
+<li>Cihaz modeli, işletim sistemi ve uygulama sürümü, dil tercihi.</li>
+<li>Sunucularımıza yapılan isteklerin güvenlik kayıtları (IP adresi, istek zamanı, hata kayıtları).</li>
+</ul>
+<h3>Toplamadıklarımız</h3>
+<div class="box note"><ul>
+<li>Cihazınızın GPS konumunu toplamıyoruz.</li>
+<li>Uygulamada reklam yoktur; reklam kimliğinizi toplamıyor, verilerinizi reklam amacıyla kullanmıyor veya satmıyoruz.</li>
+<li>Uygulamada üçüncü taraf analiz veya izleme (tracking) aracı kullanmıyoruz.</li>
+<li>Parmak izi ve yüz tanıma verileriniz cihazınızda kalır; bize iletilmez.</li>
+</ul></div>
+
+## izinler | 3. Cihaz izinleri
+<p>Uygulama aşağıdaki izinleri yalnızca ilgili özelliği kullandığınızda ister. İzinleri cihaz ayarlarından istediğiniz zaman geri alabilirsiniz.</p>
+<table><thead><tr><th>İzin</th><th>Kullanım amacı</th></tr></thead><tbody>
+<tr><td>Kamera</td><td>Hayvan fotoğrafı veya sağlık kaydına eklenecek belge fotoğrafı çekme.</td></tr>
+<tr><td>Fotoğraflar / medya</td><td>Galeriden hayvan fotoğrafı seçme, oluşturulan raporları kaydetme.</td></tr>
+<tr><td>Bildirimler</td><td>Aşı, muayene, doğum ve diğer hatırlatıcıları iletme.</td></tr>
+<tr><td>Face ID / parmak izi</td><td>Uygulamaya hızlı ve güvenli giriş. Doğrulama cihazınızda yapılır.</td></tr>
+</tbody></table>
+
+## amaclar | 4. Verileri hangi amaçlarla kullanıyoruz
+<ul>
+<li>Hesabınızı oluşturmak, oturum açmanızı sağlamak ve hesabınızı korumak.</li>
+<li>Uygulamanın temel işlevlerini sunmak: kayıtlarınızı saklamak, raporlar ve hesaplamalar üretmek, ekibinizle paylaşmak.</li>
+<li>Hatırlatıcı ve önemli hizmet bildirimleri göndermek.</li>
+<li>Abonelik durumunuzu doğrulamak ve ücretli özelliklere erişim sağlamak.</li>
+<li>Destek taleplerinizi yanıtlamak.</li>
+<li>Hizmetin güvenliğini sağlamak, kötüye kullanımı ve hataları tespit edip gidermek.</li>
+<li>Yasal yükümlülüklerimizi yerine getirmek.</li>
+</ul>
+
+## hukuki-sebep | 5. Hukuki sebepler
+<p>Kişisel verilerinizi; sizinle yaptığımız sözleşmenin kurulması ve ifası (KVKK md. 5/2-c, GDPR md. 6/1-b), hukuki yükümlülüklerimiz (KVKK md. 5/2-ç, GDPR md. 6/1-c), bir hakkın tesisi, kullanılması veya korunması (KVKK md. 5/2-e) ve temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatimiz (KVKK md. 5/2-f, GDPR md. 6/1-f) hukuki sebeplerine dayanarak işleriz. Anlık bildirimler için işletim sisteminin izin ekranında verdiğiniz onay esas alınır.</p>
+
+## ucuncu-taraflar | 6. Paylaştığımız hizmet sağlayıcılar
+<p>Verilerinizi satmayız. Hizmeti sunabilmek için yalnızca aşağıdaki hizmet sağlayıcılarla, gerekli olduğu ölçüde paylaşırız:</p>
+<table><thead><tr><th>Sağlayıcı</th><th>Amaç</th><th>Paylaşılan veriler</th></tr></thead><tbody>
+<tr><td>Google Firebase Authentication (Google LLC)</td><td>Hesap oluşturma ve giriş (e-posta/şifre, telefon/SMS, Google, Apple)</td><td>E-posta, telefon numarası (bağlanmışsa), ad, kullanıcı kimliği, giriş bilgileri</td></tr>
+<tr><td>Firebase Cloud Messaging (Google LLC)</td><td>Anlık bildirim gönderimi</td><td>Bildirim belirteci, bildirim içeriği</td></tr>
+<tr><td>Google ile Giriş (Google LLC)</td><td>Google hesabıyla giriş</td><td>Google'ın paylaştığı ad, e-posta</td></tr>
+<tr><td>Apple ile Giriş (Apple Inc.)</td><td>Apple hesabıyla giriş</td><td>Apple'ın paylaştığı ad, e-posta veya yönlendirme adresi</td></tr>
+<tr><td>RevenueCat (RevenueCat, Inc.)</td><td>Uygulama içi abonelik yönetimi</td><td>Uygulama kullanıcı kimliği, satın alma ve abonelik durumu</td></tr>
+<tr><td>Apple App Store / Google Play</td><td>Ödeme ve abonelik tahsilatı</td><td>Mağazaların kendi politikalarına tabidir</td></tr>
+<tr><td>Barındırma (Appouse tarafından yönetilen sunucular)</td><td>Uygulama verilerinin saklanması ve işlenmesi</td><td>Uygulamaya girdiğiniz veriler</td></tr>
+</tbody></table>
+<p>Döviz kurlarını göstermek için kamuya açık bir kur servisinden (Frankfurter) yalnızca kur verisi alınır; bu servise kişisel verileriniz gönderilmez. Ayrıca kanunen yetkili kamu kurum ve kuruluşlarının talebi hâlinde, mevzuatın gerektirdiği ölçüde bilgi paylaşabiliriz.</p>
+
+## yurt-disi | 7. Yurt dışına aktarım
+<p>Google, Apple ve RevenueCat'in sunucuları Türkiye dışında (başta ABD olmak üzere) bulunabilir. Bu hizmetlerin kullanılması nedeniyle kişisel verileriniz yurt dışına aktarılabilir. Bu aktarımlar KVKK md. 9'da öngörülen usul ve güvencelere uygun olarak gerçekleştirilir.</p>
+
+## saklama | 8. Saklama süresi
+<ul>
+<li>Hesap ve çiftlik verileriniz, hesabınız açık olduğu sürece saklanır.</li>
+<li>Hesabınızı sildiğinizde, hesabınız, sahibi olduğunuz çiftlikler ve bunlara ait kayıtlar sistemlerimizden silinir. E-posta ile yapılan silme talepleri en geç 30 gün içinde sonuçlandırılır.</li>
+<li>Güvenlik amaçlı sunucu kayıtları sınırlı bir süre tutulur ve ardından silinir.</li>
+<li>Mevzuat gereği saklanması zorunlu veriler, ilgili kanuni süre boyunca saklanır ve süre sonunda silinir veya anonim hâle getirilir.</li>
+</ul>
+
+## guvenlik | 9. Güvenlik
+<p>Verileriniz uygulama ile sunucularımız arasında şifreli bağlantı (HTTPS/TLS) üzerinden aktarılır. Erişim, kimlik doğrulama ve çiftlik bazlı yetkilendirme ile sınırlandırılır; her kullanıcı yalnızca üyesi olduğu çiftliklerin verilerine, rolünün izin verdiği ölçüde erişebilir. Hiçbir sistem tamamen risksiz olmasa da verilerinizi korumak için makul teknik ve idari tedbirleri uygularız.</p>
+
+## haklariniz | 10. Haklarınız
+<p>KVKK md. 11 ve uygulanabildiği ölçüde GDPR kapsamında; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, verilerinize erişme ve bir kopyasını alma, eksik veya yanlış verilerin düzeltilmesini, verilerinizin silinmesini isteme, işlemeye itiraz etme ve zarara uğramanız hâlinde giderilmesini talep etme haklarına sahipsiniz.</p>
+<p>Taleplerinizi {{email}} adresine iletebilirsiniz. Talepleriniz en geç 30 gün içinde yanıtlanır. Kişisel Verileri Koruma Kurulu'na şikâyette bulunma hakkınız saklıdır.</p>
+
+## hesap-silme | 11. Hesabınızı ve verilerinizi silme
+<p>Hesabınızı uygulama içinden <strong>Ayarlar → Hesabı Sil</strong> adımıyla dilediğiniz an silebilirsiniz. Uygulamaya erişemiyorsanız veya yalnızca belirli verilerinizin silinmesini istiyorsanız <a href="{{url:deleteAccount}}">Hesap ve Veri Silme</a> sayfasındaki adımları izleyin.</p>
+
+## cocuklar | 12. Çocukların gizliliği
+<p>Animora, hayvancılık işletmelerine yönelik bir iş uygulamasıdır ve 18 yaşından küçüklere yönelik değildir. 13 yaşından küçük çocuklardan bilerek kişisel veri toplamayız. Böyle bir verinin toplandığını fark edersek siliriz; bu durumu fark ederseniz lütfen bize bildirin.</p>
+
+## web-sitesi | 13. Bu web sitesi
+<p>Bu web sitesi çerez, analiz veya izleme aracı kullanmaz ve harici kaynaklardan yazı tipi ya da betik yüklemez. Sunucu, güvenlik amacıyla standart erişim kayıtları (IP adresi, tarih, istenen sayfa) tutar. Ayrıntılar: <a href="{{url:cookies}}">Çerez Politikası</a>.</p>
+
+## degisiklikler | 14. Değişiklikler
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayımlanır ve sayfanın başındaki tarih güncellenir. Önemli değişiklikleri uygulama içinden veya e-posta ile ayrıca bildiririz.</p>
+
+## iletisim | 15. İletişim
+<p>Gizlilikle ilgili tüm soru ve talepleriniz için: {{email}}</p>{{controller}}

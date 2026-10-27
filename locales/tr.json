@@ -1,0 +1,478 @@
+{
+  "meta": {
+    "lang": "tr",
+    "ogLocale": "tr_TR",
+    "langName": "Türkçe",
+    "updated": "28 Ekim 2026"
+  },
+  "site": {
+    "brand": "Animora",
+    "skip": "İçeriğe geç",
+    "menu": "Menü",
+    "toc": "Bu sayfada",
+    "updated": "Son güncelleme: {date}",
+    "language": "Dil",
+    "footTagline": "Büyükbaş ve küçükbaş işletmeler için çiftlik ve sürü yönetimi uygulaması.",
+    "footProduct": "Ürün",
+    "footLegal": "Yasal",
+    "copyright": "© {year} Appouse Teknoloji Ltd. Şti. Tüm hakları saklıdır.",
+    "by": "Animora, Appouse Teknoloji Ltd. Şti. ürünüdür."
+  },
+  "nav": {
+    "features": "Özellikler",
+    "plans": "Paketler",
+    "faq": "SSS",
+    "faqLong": "Sık sorulan sorular",
+    "support": "Destek",
+    "supportLong": "Destek ve iletişim"
+  },
+  "anchors": {
+    "features": "ozellikler",
+    "screens": "ekranlar",
+    "plans": "paketler",
+    "faq": "sss",
+    "contact": "iletisim",
+    "subscriptions": "abonelik"
+  },
+  "controller": {
+    "name": "APPOUSE TEKNOLOJİ LİMİTED ŞİRKETİ",
+    "address": "Altıntepe Mahallesi, İstasyon Yolu Sokak No: 3 Daire: 1, Maltepe / İstanbul, Türkiye",
+    "emailLabel": "E-posta:"
+  },
+  "pages": {
+    "home": {
+      "title": "Animora — Çiftlik ve Sürü Yönetimi Uygulaması",
+      "description": "Animora ile hayvan kaydı, sağlık ve aşı, süt üretimi, üreme ve gebelik, finans, yem ve ekip yönetimini tek uygulamada yapın. iOS ve Android için yakında."
+    },
+    "privacy": {
+      "label": "Gizlilik Politikası",
+      "title": "Gizlilik Politikası — Animora",
+      "description": "Animora mobil uygulamasının hangi kişisel verileri topladığı, nasıl kullandığı, kimlerle paylaştığı ve haklarınız.",
+      "eyebrow": "Yasal",
+      "h1": "Gizlilik Politikası",
+      "intro": "Bu politika, Animora mobil uygulaması (\"Uygulama\") ve bu web sitesi kapsamında kişisel verilerinizin nasıl işlendiğini açıklar."
+    },
+    "kvkk": {
+      "label": "KVKK Aydınlatma Metni",
+      "title": "KVKK Aydınlatma Metni — Animora",
+      "description": "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında Animora kullanıcılarına yönelik aydınlatma metni.",
+      "eyebrow": "Yasal",
+      "h1": "KVKK Aydınlatma Metni",
+      "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") md. 10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, Animora kullanıcılarını bilgilendirmek amacıyla hazırlanmıştır."
+    },
+    "terms": {
+      "label": "Kullanım Koşulları",
+      "title": "Kullanım Koşulları — Animora",
+      "description": "Animora mobil uygulamasının kullanım koşulları, abonelik, otomatik yenileme ve iptal kuralları.",
+      "eyebrow": "Yasal",
+      "h1": "Kullanım Koşulları",
+      "intro": "Bu koşullar, Animora mobil uygulamasını (\"Uygulama\") kullanan siz ile Uygulamayı geliştiren ve işleten APPOUSE TEKNOLOJİ LİMİTED ŞİRKETİ (\"Appouse\", \"biz\") arasındaki ilişkiyi düzenler. Uygulamayı kullanarak bu koşulları kabul etmiş olursunuz."
+    },
+    "deleteAccount": {
+      "label": "Hesap ve Veri Silme",
+      "title": "Hesap ve Veri Silme — Animora",
+      "description": "Animora hesabınızı ve verilerinizi uygulama içinden veya e-posta ile nasıl sileceğinizi öğrenin.",
+      "eyebrow": "Hesap",
+      "h1": "Hesap ve Veri Silme",
+      "intro": "Animora hesabınızı ve ilişkili verilerinizi dilediğiniz zaman silebilirsiniz. Bu sayfa, Animora (Appouse Teknoloji Ltd. Şti.) uygulaması için hesap ve veri silme yollarını açıklar."
+    },
+    "support": {
+      "label": "Destek ve İletişim",
+      "title": "Destek ve İletişim — Animora",
+      "description": "Animora uygulaması için destek, sık sorulan sorular ve iletişim bilgileri.",
+      "eyebrow": "Destek",
+      "h1": "Destek ve İletişim",
+      "intro": "Animora ile ilgili sorularınız, hata bildirimleriniz ve önerileriniz için buradayız."
+    },
+    "cookies": {
+      "label": "Çerez Politikası",
+      "title": "Çerez Politikası — Animora",
+      "description": "animora.appouse.com web sitesinin çerez ve benzeri teknolojileri kullanımı hakkında bilgi.",
+      "eyebrow": "Yasal",
+      "h1": "Çerez Politikası",
+      "intro": "Bu politika, animora.appouse.com web sitesi için geçerlidir."
+    },
+    "notFound": {
+      "title": "Sayfa bulunamadı — Animora",
+      "description": "Aradığınız sayfa bulunamadı.",
+      "h1": "404",
+      "text": "Aradığınız sayfa bulunamadı. Adres değişmiş ya da kaldırılmış olabilir.",
+      "home": "Ana sayfaya dön"
+    }
+  },
+  "jsonLd": {
+    "description": "Büyükbaş ve küçükbaş işletmeler için çiftlik ve sürü yönetimi uygulaması.",
+    "os": "iOS, Android"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Çiftlik ve sürü yönetimi",
+      "titleStart": "Sürünüzün her kaydı,",
+      "titleEm": "cebinizde.",
+      "lead": "Animora; hayvan kaydından sağlık ve aşı takibine, süt veriminden gebelik takvimine, finanstan ekip yönetimine kadar çiftliğinizin tüm işlerini tek bir mobil uygulamada toplar.",
+      "note": "iOS ve Android için hazırlanıyor. Ücretsiz planla başlayabileceksiniz.",
+      "chipA": {
+        "title": "Beklenen doğum",
+        "text": "TR-089 · 6 gün kaldı"
+      },
+      "chipB": {
+        "title": "Hatırlatıcı",
+        "text": "Yarın 09:30 — aşı"
+      }
+    },
+    "store": {
+      "soon": "Yakında",
+      "apple": {
+        "platform": "iOS",
+        "name": "App Store",
+        "aria": "App Store — yakında"
+      },
+      "google": {
+        "platform": "Android",
+        "name": "Google Play",
+        "aria": "Google Play — yakında"
+      }
+    },
+    "values": [
+      {
+        "icon": "phone",
+        "tone": "t-green",
+        "title": "Her şey tek yerde",
+        "text": "Defter, ajanda ve tabloların yerine tek, düzenli bir kayıt."
+      },
+      {
+        "icon": "bell",
+        "tone": "t-wheat",
+        "title": "Hiçbir işi kaçırmayın",
+        "text": "Aşı, muayene ve doğumlar için zamanında hatırlatma."
+      },
+      {
+        "icon": "users",
+        "tone": "t-sky",
+        "title": "Ekibinizle birlikte",
+        "text": "Çalışanlarınız ve veterineriniz aynı kayıt üzerinde çalışır."
+      }
+    ],
+    "features": {
+      "eyebrow": "Özellikler",
+      "title": "Çiftlikte ihtiyaç duyduğunuz her şey",
+      "text": "Animora, işletmenizin günlük operasyonunu ve hayvanlarınızın biyolojik döngüsünü birlikte takip etmeniz için tasarlandı.",
+      "items": [
+        {
+          "icon": "tag",
+          "tone": "t-green",
+          "title": "Hayvan kaydı",
+          "text": "Küpe numarası, tür, ırk, doğum tarihi, anne-baba ve grup bilgisiyle her hayvanın kimlik kartı; fotoğraf ekleyin, aradığınız hayvanı saniyeler içinde bulun."
+        },
+        {
+          "icon": "syringe",
+          "tone": "t-rose",
+          "title": "Sağlık, aşı ve tedavi",
+          "text": "Aşı takvimi, muayene, teşhis ve tedavi kayıtları; ilaç ve arınma süreleriyle birlikte hayvanın tüm sağlık geçmişi."
+        },
+        {
+          "icon": "drop",
+          "tone": "t-sky",
+          "title": "Süt üretimi",
+          "text": "Sağım kayıtlarını hayvan veya sürü bazında girin; günlük, haftalık verim ve en çok süt veren hayvanları takip edin."
+        },
+        {
+          "icon": "heart",
+          "tone": "t-plum",
+          "title": "Üreme ve gebelik",
+          "text": "Kızgınlık, tohumlama, gebelik muayenesi, kuruya ayırma ve doğum olayları; beklenen doğum tarihleri otomatik hesaplanır."
+        },
+        {
+          "icon": "calendar",
+          "tone": "t-wheat",
+          "title": "Takvim ve hatırlatıcılar",
+          "text": "Aşı, muayene ve doğum gibi yaklaşan işleri tek takvimde görün; zamanında bildirim alın."
+        },
+        {
+          "icon": "wallet",
+          "tone": "t-green",
+          "title": "Finans",
+          "text": "Gelir ve giderleri kategorilere ayırarak kaydedin; işletmenizin ve hayvan bazında kârlılığın resmini görün."
+        },
+        {
+          "icon": "wheat",
+          "tone": "t-wheat",
+          "title": "Yem ve rasyon",
+          "text": "Yem kütüphanesi ve rasyon hesaplayıcıyla hayvan grubunuza uygun besleme planını hazırlayın."
+        },
+        {
+          "icon": "box",
+          "tone": "t-sky",
+          "title": "Envanter",
+          "text": "Yem, ilaç ve malzeme stoklarını izleyin; azalan ürünleri zamanında fark edin."
+        },
+        {
+          "icon": "file",
+          "tone": "t-rose",
+          "title": "Raporlar ve dışa aktarım",
+          "text": "Sürü, sağlık, süt ve finans raporlarını PDF veya Excel olarak dışa aktarın, paylaşın."
+        },
+        {
+          "icon": "users",
+          "tone": "t-plum",
+          "title": "Ekip yönetimi",
+          "text": "Çalışanlarınızı ve ortaklarınızı davet edin; her kişiye rolüne uygun yetki verin."
+        },
+        {
+          "icon": "steth",
+          "tone": "t-green",
+          "title": "Veteriner modu",
+          "text": "Veteriner hekiminiz çiftliğinize bağlanıp muayene, teşhis ve tedavi planını doğrudan uygulamadan iletebilir."
+        },
+        {
+          "icon": "grid",
+          "tone": "t-wheat",
+          "title": "Padok planı",
+          "text": "Ahır ve padoklarınızın planını çıkarın; hangi hayvanın nerede olduğunu bir bakışta görün."
+        }
+      ]
+    },
+    "screens": {
+      "eyebrow": "Uygulamadan",
+      "title": "Sade ekranlar, net bilgi",
+      "text": "Sahada, ahırda ya da ofiste; ihtiyacınız olan bilgiye birkaç dokunuşla ulaşın.",
+      "note": "Görseller uygulama arayüzünün temsili çizimleridir; örnek veriler içerir.",
+      "captions": {
+        "milk": "Süt verimi",
+        "repro": "Üreme ve gebelik",
+        "finance": "Finans"
+      }
+    },
+    "mock": {
+      "nav": [
+        "Ana sayfa",
+        "Hayvanlar",
+        "Süt",
+        "Finans",
+        "Ayarlar"
+      ],
+      "dashboard": {
+        "aria": "Animora ana ekranı: toplam hayvan, günlük süt ve yaklaşan görevler",
+        "hello": "Hoş geldiniz",
+        "farm": "Yeşilvadi Çiftliği",
+        "animalsValue": "142",
+        "animals": "Toplam hayvan",
+        "milkValue": "850 L",
+        "milk": "Bugünkü süt",
+        "tasks": "Yaklaşan işler",
+        "t1": "Şap aşısı",
+        "t1s": "A grubu · 12 hayvan",
+        "today": "Bugün",
+        "t2": "Gebelik muayenesi",
+        "t2s": "TR-154, TR-158",
+        "tomorrow": "Yarın",
+        "t3": "Rasyon güncellendi",
+        "t3s": "Sağmal grup",
+        "ok": "Tamam"
+      },
+      "milk": {
+        "aria": "Süt üretimi ekranı",
+        "eyebrow": "Çiftlik yönetimi",
+        "title": "Süt Üretimi",
+        "total": "Bugünkü toplam",
+        "totalValue": "1.245 L",
+        "target": "Hedef: 1.200 L",
+        "avg": "İnek başına",
+        "avgValue": "28,4 L",
+        "quality": "Kalite",
+        "qualityValue": "%3,8 · %3,2",
+        "fatProt": "Yağ · Protein",
+        "weekly": "Haftalık eğilim",
+        "days": [
+          "Pzt",
+          "Sal",
+          "Çar",
+          "Per",
+          "Cum",
+          "Cmt",
+          "Paz"
+        ]
+      },
+      "repro": {
+        "aria": "Üreme ve gebelik takibi ekranı",
+        "eyebrow": "Üreme",
+        "title": "Gebelik Takibi",
+        "pregnant": "Gebe",
+        "pregnantValue": "38",
+        "dueSoon": "30 gün içinde doğum",
+        "dueSoonValue": "6",
+        "rows": [
+          {
+            "id": "TR-089",
+            "day": "274. gün",
+            "text": "Beklenen doğum: 3 Kasım",
+            "progress": 96
+          },
+          {
+            "id": "TR-154",
+            "day": "181. gün",
+            "text": "Kuruya ayırma: 21 Kasım",
+            "progress": 64
+          },
+          {
+            "id": "TR-212",
+            "day": "42. gün",
+            "text": "Gebelik muayenesi: yarın",
+            "progress": 15
+          }
+        ]
+      },
+      "finance": {
+        "aria": "Finans ekranı",
+        "eyebrow": "Finans",
+        "title": "Gelir ve Gider",
+        "net": "Net kâr",
+        "netValue": "₺184.250",
+        "period": "Bu yıl",
+        "income": "Gelir",
+        "incomeValue": "₺412.900",
+        "expense": "Gider",
+        "expenseValue": "₺228.650",
+        "rows": [
+          {
+            "title": "Süt satışı",
+            "text": "Mandıra · 24 Ekim",
+            "amount": "+₺38.400",
+            "positive": true
+          },
+          {
+            "title": "Yem alımı",
+            "text": "Silaj · 22 Ekim",
+            "amount": "−₺21.750",
+            "positive": false
+          },
+          {
+            "title": "Veteriner",
+            "text": "Aşı · 20 Ekim",
+            "amount": "−₺4.200",
+            "positive": false
+          }
+        ]
+      }
+    },
+    "audience": {
+      "eyebrow": "Kimler için",
+      "title": "Büyükbaştan küçükbaşa",
+      "text": "Aile işletmesinden profesyonel çiftliğe kadar, hayvanlarını düzenli takip etmek isteyen herkes için.",
+      "items": [
+        {
+          "title": "Sığır",
+          "text": "Süt ve besi"
+        },
+        {
+          "title": "Manda",
+          "text": "Süt ve besi"
+        },
+        {
+          "title": "Koyun",
+          "text": "Sürü ve kuzulama"
+        },
+        {
+          "title": "Keçi",
+          "text": "Süt ve oğlaklama"
+        }
+      ]
+    },
+    "plans": {
+      "eyebrow": "Paketler",
+      "title": "İşletmenize uygun planı seçin",
+      "text": "Ücretsiz başlayın; sürünüz büyüdükçe planınızı yükseltin.",
+      "items": [
+        {
+          "name": "Ücretsiz",
+          "desc": "Temel özellikler",
+          "featured": false,
+          "features": [
+            "7 hayvan kaydı",
+            "Temel sağlık takibi (görüntüleme)",
+            "Takvim (5 etkinlik/ay)",
+            "2 grup oluşturma"
+          ]
+        },
+        {
+          "name": "Basic",
+          "badge": "En Popüler",
+          "desc": "Standart özellikler",
+          "featured": true,
+          "features": [
+            "50 hayvan kaydı",
+            "Sağlık kaydı ekleme",
+            "Finansal takip",
+            "Temel raporlar",
+            "Hatırlatıcılar"
+          ]
+        },
+        {
+          "name": "Pro",
+          "desc": "Tüm özellikler",
+          "featured": false,
+          "features": [
+            "Sınırsız hayvan",
+            "Tüm Basic özellikleri",
+            "Tedavi protokolleri",
+            "Rasyon hesaplama",
+            "Kârlılık analizi",
+            "PDF/Excel dışa aktarma",
+            "Çoklu çiftlik",
+            "Ekip yönetimi"
+          ]
+        }
+      ],
+      "note": "Fiyatlar, uygulama yayınlandığında App Store ve Google Play'de gösterilecektir. Ücretli planlar aylık veya yıllık olarak mağaza hesabınız üzerinden satın alınır, otomatik yenilenir ve istediğiniz zaman iptal edilebilir. Ayrıntılar:",
+      "noteLink": "Kullanım Koşulları",
+      "noteEnd": "."
+    },
+    "soon": {
+      "title": "Yakında: akıllı sensör entegrasyonu",
+      "text": "Ahır ortamı ve hayvan sağlığı için sensör entegrasyonu üzerinde çalışıyoruz. Bu özellik henüz kullanımda değildir; hazır olduğunda burada duyuracağız."
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Sık sorulan sorular",
+      "items": [
+        {
+          "q": "Animora hangi hayvanlar için uygun?",
+          "a": "Animora büyükbaş (sığır, manda) ve küçükbaş (koyun, keçi) işletmeleri için tasarlandı. Hayvanları tek tek veya grup halinde takip edebilirsiniz."
+        },
+        {
+          "q": "Uygulama ne zaman yayınlanacak?",
+          "a": "Animora şu anda yayın hazırlığında. iOS (App Store) ve Android (Google Play) sürümleri yayınlandığında bu sayfadaki mağaza bağlantıları etkinleşecek."
+        },
+        {
+          "q": "Ücretsiz kullanabilir miyim?",
+          "a": "Evet. Ücretsiz plan, küçük sürüler için temel hayvan kaydı, sağlık kayıtlarını görüntüleme ve sınırlı takvim kullanımını içerir. Daha fazlasına ihtiyaç duyduğunuzda Basic veya Pro plana geçebilirsiniz."
+        },
+        {
+          "q": "Abonelik nasıl ücretlendirilir ve nasıl iptal edilir?",
+          "a": "Ücretli planlar App Store veya Google Play hesabınız üzerinden satın alınır ve dönem sonunda otomatik yenilenir. Aboneliğinizi istediğiniz zaman mağaza hesap ayarlarınızdan iptal edebilirsiniz; iptal, içinde bulunulan dönemin sonunda geçerli olur."
+        },
+        {
+          "q": "Ekibim ve veterinerim de kullanabilir mi?",
+          "a": "Evet. Ekip yönetimiyle çalışanlarınızı davet edip rollerine göre yetki verebilirsiniz. Veteriner modu, veteriner hekiminizin çiftliğinize bağlanarak muayene ve tedavi kayıtlarını doğrudan girmesini sağlar."
+        },
+        {
+          "q": "Verilerim güvende mi?",
+          "a": "Verileriniz şifreli bağlantı (HTTPS) üzerinden aktarılır ve yalnızca sizin ve yetki verdiğiniz ekip üyelerinin erişebileceği şekilde saklanır. Ayrıntılar için Gizlilik Politikamıza göz atabilirsiniz."
+        },
+        {
+          "q": "Hesabımı nasıl silerim?",
+          "a": "Uygulamada Ayarlar → Hesabı Sil adımıyla hesabınızı ve verilerinizi silebilirsiniz. Uygulamaya erişemiyorsanız Hesap ve Veri Silme sayfasındaki e-posta yolunu kullanabilirsiniz."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Sorunuz mu var?",
+      "textStart": "Animora hakkında bilgi almak, öneri iletmek veya destek istemek için bize yazın. Daha fazla yardım için",
+      "textLink": "Destek",
+      "textEnd": "sayfasına göz atın.",
+      "emailLabel": "E-posta",
+      "emailSubject": "Animora",
+      "helpLabel": "Yardım merkezi"
+    }
+  }
+}
