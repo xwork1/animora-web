@@ -113,11 +113,15 @@
       "note": "iOS ve Android için hazırlanıyor. Ücretsiz planla başlayabileceksiniz.",
       "chipA": {
         "title": "Beklenen doğum",
-        "text": "TR-089 · 6 gün kaldı"
+        "text": "Sarıkız · 6 gün kaldı"
       },
       "chipB": {
         "title": "Hatırlatıcı",
         "text": "Yarın 09:30 — aşı"
+      },
+      "shot": {
+        "img": "herd",
+        "alt": "Animora Çiftliğim ekranı: sürüdeki hayvanların küpe numaralarıyla kart görünümü"
       }
     },
     "store": {
@@ -232,128 +236,102 @@
         }
       ]
     },
+    "spotlight": {
+      "eyebrow": "Yakından bakın",
+      "title": "Günlük işleriniz, birkaç dokunuş uzağınızda",
+      "text": "Ekranlar sahada hızlı kullanım için tasarlandı: büyük dokunma alanları, net sayılar ve anlaşılır renkler.",
+      "items": [
+        {
+          "img": "animal",
+          "alt": "Hayvan kartı ekranı: küpe numarası, aktif tedavi ve doz takibi",
+          "eyebrow": "Hayvan kartı",
+          "title": "Her hayvanın tam geçmişi tek ekranda",
+          "text": "Küpe numarası, ırk ve laktasyon günü en üstte; aktif tedaviler doz takibiyle birlikte görünür. Sağlık geçmişi, süt kayıtları, soy ağacı ve notlar bir dokunuş uzağınızda.",
+          "points": [
+            "Aktif tedavi ve doz takibi",
+            "Sağlık ve üreme bilgileri ayrı sekmelerde",
+            "Soy ağacı ve notlar"
+          ]
+        },
+        {
+          "img": "calendar",
+          "alt": "Takvim ekranı: doğum, kızgınlık ve veteriner kontrolü işaretli aylık görünüm",
+          "eyebrow": "Takvim",
+          "title": "Yaklaşan işleri kaçırmayın",
+          "text": "Beklenen doğumlar, kızgınlık ve tohumlama, veteriner kontrolleri takvimde renkli işaretlerle görünür. Bir güne dokunun, o günün görevlerini görün ve tamamlayın.",
+          "points": [
+            "Renk kodlu etkinlikler",
+            "Günün görevleri tek listede",
+            "Zamanında hatırlatma bildirimleri"
+          ]
+        },
+        {
+          "img": "feed",
+          "alt": "Yem kütüphanesi ekranı: yemlerin besin değerleri ve kilogram fiyatları",
+          "eyebrow": "Yem ve rasyon",
+          "title": "Yem kütüphaneniz ve rasyon hesabı",
+          "text": "Yemlerinizi enerji, kuru madde, ham protein ve kilogram fiyatıyla kaydedin; rasyon hesaplayıcıyla hayvan grubunuza uygun besleme planını hazırlayın.",
+          "points": [
+            "Kaba ve kesif yem ayrımı",
+            "Besin değerleri ve birim fiyat",
+            "Rasyon hesaplayıcı"
+          ]
+        },
+        {
+          "img": "paddocks",
+          "alt": "Padoklar ekranı: grupların kapasite ve doluluk oranları",
+          "eyebrow": "Padok ve gruplar",
+          "title": "Ahırınızın düzeni bir bakışta",
+          "text": "Padok ve grupları oluşturun, kapasite ve doluluk oranını izleyin; buzağı, doğum ve gebe bölmelerini düzenli tutun.",
+          "points": [
+            "Kapasite ve doluluk takibi",
+            "Aktif ve dinlenen padoklar",
+            "Gruplara göre filtreleme"
+          ]
+        }
+      ]
+    },
     "screens": {
       "eyebrow": "Uygulamadan",
       "title": "Sade ekranlar, net bilgi",
       "text": "Sahada, ahırda ya da ofiste; ihtiyacınız olan bilgiye birkaç dokunuşla ulaşın.",
-      "note": "Görseller uygulama arayüzünün temsili çizimleridir; örnek veriler içerir.",
-      "captions": {
-        "milk": "Süt verimi",
-        "repro": "Üreme ve gebelik",
-        "finance": "Finans"
-      }
-    },
-    "mock": {
-      "nav": [
-        "Ana sayfa",
-        "Hayvanlar",
-        "Süt",
-        "Finans",
-        "Ayarlar"
-      ],
-      "dashboard": {
-        "aria": "Animora ana ekranı: toplam hayvan, günlük süt ve yaklaşan görevler",
-        "hello": "Hoş geldiniz",
-        "farm": "Yeşilvadi Çiftliği",
-        "animalsValue": "142",
-        "animals": "Toplam hayvan",
-        "milkValue": "850 L",
-        "milk": "Bugünkü süt",
-        "tasks": "Yaklaşan işler",
-        "t1": "Şap aşısı",
-        "t1s": "A grubu · 12 hayvan",
-        "today": "Bugün",
-        "t2": "Gebelik muayenesi",
-        "t2s": "TR-154, TR-158",
-        "tomorrow": "Yarın",
-        "t3": "Rasyon güncellendi",
-        "t3s": "Sağmal grup",
-        "ok": "Tamam"
-      },
-      "milk": {
-        "aria": "Süt üretimi ekranı",
-        "eyebrow": "Çiftlik yönetimi",
-        "title": "Süt Üretimi",
-        "total": "Bugünkü toplam",
-        "totalValue": "1.245 L",
-        "target": "Hedef: 1.200 L",
-        "avg": "İnek başına",
-        "avgValue": "28,4 L",
-        "quality": "Kalite",
-        "qualityValue": "%3,8 · %3,2",
-        "fatProt": "Yağ · Protein",
-        "weekly": "Haftalık eğilim",
-        "days": [
-          "Pzt",
-          "Sal",
-          "Çar",
-          "Per",
-          "Cum",
-          "Cmt",
-          "Paz"
-        ]
-      },
-      "repro": {
-        "aria": "Üreme ve gebelik takibi ekranı",
-        "eyebrow": "Üreme",
-        "title": "Gebelik Takibi",
-        "pregnant": "Gebe",
-        "pregnantValue": "38",
-        "dueSoon": "30 gün içinde doğum",
-        "dueSoonValue": "6",
-        "rows": [
-          {
-            "id": "TR-089",
-            "day": "274. gün",
-            "text": "Beklenen doğum: 3 Kasım",
-            "progress": 96
-          },
-          {
-            "id": "TR-154",
-            "day": "181. gün",
-            "text": "Kuruya ayırma: 21 Kasım",
-            "progress": 64
-          },
-          {
-            "id": "TR-212",
-            "day": "42. gün",
-            "text": "Gebelik muayenesi: yarın",
-            "progress": 15
-          }
-        ]
-      },
-      "finance": {
-        "aria": "Finans ekranı",
-        "eyebrow": "Finans",
-        "title": "Gelir ve Gider",
-        "net": "Net kâr",
-        "netValue": "₺184.250",
-        "period": "Bu yıl",
-        "income": "Gelir",
-        "incomeValue": "₺412.900",
-        "expense": "Gider",
-        "expenseValue": "₺228.650",
-        "rows": [
-          {
-            "title": "Süt satışı",
-            "text": "Mandıra · 24 Ekim",
-            "amount": "+₺38.400",
-            "positive": true
-          },
-          {
-            "title": "Yem alımı",
-            "text": "Silaj · 22 Ekim",
-            "amount": "−₺21.750",
-            "positive": false
-          },
-          {
-            "title": "Veteriner",
-            "text": "Aşı · 20 Ekim",
-            "amount": "−₺4.200",
-            "positive": false
-          }
-        ]
-      }
+      "note": "Ekran görüntüleri uygulamanın demo hesabından alınmıştır; örnek veriler içerir.",
+      "label": "Uygulama ekran görüntüleri",
+      "choose": "Ekran seçin",
+      "prev": "Önceki ekran",
+      "next": "Sonraki ekran",
+      "items": [
+        {
+          "img": "herd",
+          "label": "Sürü",
+          "alt": "Çiftliğim ekranı: sürüdeki hayvanların kart görünümü"
+        },
+        {
+          "img": "animal",
+          "label": "Hayvan kartı",
+          "alt": "Hayvan detayı: aktif tedavi, doz takibi ve diğer bilgiler"
+        },
+        {
+          "img": "calendar",
+          "label": "Takvim",
+          "alt": "Takvim: aylık görünümde doğum, kızgınlık ve kontrol işaretleri"
+        },
+        {
+          "img": "tasks",
+          "label": "Günün görevleri",
+          "alt": "Seçilen günün görevleri: kızgınlık gözlemleri ve tamamlama işaretleri"
+        },
+        {
+          "img": "feed",
+          "label": "Yem kütüphanesi",
+          "alt": "Yem kütüphanesi: yem türleri, besin değerleri ve fiyatlar"
+        },
+        {
+          "img": "paddocks",
+          "label": "Padoklar",
+          "alt": "Padok grupları: kapasite ve doluluk oranları"
+        }
+      ]
     },
     "audience": {
       "eyebrow": "Kimler için",

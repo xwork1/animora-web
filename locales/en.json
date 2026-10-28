@@ -113,11 +113,15 @@
       "note": "Coming to iOS and Android. You will be able to start with the Free plan.",
       "chipA": {
         "title": "Expected calving",
-        "text": "TR-089 · in 6 days"
+        "text": "Clover · in 6 days"
       },
       "chipB": {
         "title": "Reminder",
         "text": "Tomorrow 09:30 — vaccine"
+      },
+      "shot": {
+        "img": "milk",
+        "alt": "Animora Milk Production screen: total milk, yield per cow and top producers"
       }
     },
     "store": {
@@ -232,128 +236,102 @@
         }
       ]
     },
+    "spotlight": {
+      "eyebrow": "Take a closer look",
+      "title": "Your daily work, a few taps away",
+      "text": "Screens are designed for quick use in the field: large touch targets, clear numbers and meaningful colours.",
+      "items": [
+        {
+          "img": "animal",
+          "alt": "Animal profile screen: ear tag, breed, lactation day and a withdrawal warning",
+          "eyebrow": "Animal profile",
+          "title": "Every animal’s full history on one screen",
+          "text": "Ear tag, breed and lactation day at the top, with withdrawal warnings right below. Health history, milk records, pedigree and notes are one tap away.",
+          "points": [
+            "Withdrawal period warnings",
+            "Health and breeding data in separate tabs",
+            "Pedigree and notes"
+          ]
+        },
+        {
+          "img": "health",
+          "alt": "Health dashboard: active treatments, pending vaccines and withdrawal alerts",
+          "eyebrow": "Health",
+          "title": "Treatments, vaccines and withdrawal alerts",
+          "text": "See active treatments, pending vaccines and animals whose milk must be withheld at a glance. Log vaccinations and follow protocols from the same dashboard.",
+          "points": [
+            "Withdrawal alerts with days remaining",
+            "Quick vaccination logging",
+            "Treatment protocols"
+          ]
+        },
+        {
+          "img": "milk",
+          "alt": "Milk production screen: total milk, yield per cow and top producers",
+          "eyebrow": "Milk production",
+          "title": "Daily yield and top producers",
+          "text": "Record milkings per animal or for the whole herd; follow total milk, average per cow and the number of milking cows, daily or weekly.",
+          "points": [
+            "Total and per-cow yield",
+            "Daily and weekly views",
+            "Top producers ranking"
+          ]
+        },
+        {
+          "img": "finance",
+          "alt": "Finance screen: income, expense, net profit and cash flow chart",
+          "eyebrow": "Finance",
+          "title": "Income, expenses and cash flow",
+          "text": "Record income and expenses by category, follow net profit by week, month or year and see profitability per animal.",
+          "points": [
+            "Weekly, monthly and yearly totals",
+            "Cash flow chart",
+            "Profit and loss per animal"
+          ]
+        }
+      ]
+    },
     "screens": {
       "eyebrow": "Inside the app",
       "title": "Simple screens, clear information",
       "text": "In the field, in the barn or in the office, get to what you need in a few taps.",
-      "note": "Images are illustrations of the app interface and contain sample data.",
-      "captions": {
-        "milk": "Milk yield",
-        "repro": "Breeding and pregnancy",
-        "finance": "Finance"
-      }
-    },
-    "mock": {
-      "nav": [
-        "Home",
-        "Animals",
-        "Milk",
-        "Finance",
-        "Settings"
-      ],
-      "dashboard": {
-        "aria": "Animora home screen: total animals, today’s milk and upcoming tasks",
-        "hello": "Welcome back",
-        "farm": "Green Valley Farm",
-        "animalsValue": "142",
-        "animals": "Total animals",
-        "milkValue": "850 L",
-        "milk": "Today’s milk",
-        "tasks": "Upcoming tasks",
-        "t1": "FMD vaccination",
-        "t1s": "Group A · 12 animals",
-        "today": "Today",
-        "t2": "Pregnancy check",
-        "t2s": "TR-154, TR-158",
-        "tomorrow": "Tomorrow",
-        "t3": "Ration updated",
-        "t3s": "Lactating group",
-        "ok": "Done"
-      },
-      "milk": {
-        "aria": "Milk production screen",
-        "eyebrow": "Farm management",
-        "title": "Milk Production",
-        "total": "Today’s total",
-        "totalValue": "1,245 L",
-        "target": "Target: 1,200 L",
-        "avg": "Per cow",
-        "avgValue": "28.4 L",
-        "quality": "Quality",
-        "qualityValue": "3.8% · 3.2%",
-        "fatProt": "Fat · Protein",
-        "weekly": "Weekly trend",
-        "days": [
-          "Mon",
-          "Tue",
-          "Wed",
-          "Thu",
-          "Fri",
-          "Sat",
-          "Sun"
-        ]
-      },
-      "repro": {
-        "aria": "Breeding and pregnancy screen",
-        "eyebrow": "Breeding",
-        "title": "Pregnancy Tracking",
-        "pregnant": "Pregnant",
-        "pregnantValue": "38",
-        "dueSoon": "Due in 30 days",
-        "dueSoonValue": "6",
-        "rows": [
-          {
-            "id": "TR-089",
-            "day": "Day 274",
-            "text": "Expected calving: Nov 3",
-            "progress": 96
-          },
-          {
-            "id": "TR-154",
-            "day": "Day 181",
-            "text": "Dry-off: Nov 21",
-            "progress": 64
-          },
-          {
-            "id": "TR-212",
-            "day": "Day 42",
-            "text": "Pregnancy check: tomorrow",
-            "progress": 15
-          }
-        ]
-      },
-      "finance": {
-        "aria": "Finance screen",
-        "eyebrow": "Finance",
-        "title": "Income and Expenses",
-        "net": "Net profit",
-        "netValue": "₺184,250",
-        "period": "This year",
-        "income": "Income",
-        "incomeValue": "₺412,900",
-        "expense": "Expenses",
-        "expenseValue": "₺228,650",
-        "rows": [
-          {
-            "title": "Milk sales",
-            "text": "Dairy · Oct 24",
-            "amount": "+₺38,400",
-            "positive": true
-          },
-          {
-            "title": "Feed purchase",
-            "text": "Silage · Oct 22",
-            "amount": "−₺21,750",
-            "positive": false
-          },
-          {
-            "title": "Veterinary",
-            "text": "Vaccine · Oct 20",
-            "amount": "−₺4,200",
-            "positive": false
-          }
-        ]
-      }
+      "note": "Screenshots are taken from a demo account and contain sample data.",
+      "label": "App screenshots",
+      "choose": "Choose a screen",
+      "prev": "Previous screen",
+      "next": "Next screen",
+      "items": [
+        {
+          "img": "animal",
+          "label": "Animal profile",
+          "alt": "Animal details: withdrawal warning, health history and milk records"
+        },
+        {
+          "img": "health",
+          "label": "Health",
+          "alt": "Health dashboard: active treatments, pending vaccines and withdrawal alerts"
+        },
+        {
+          "img": "milk",
+          "label": "Milk",
+          "alt": "Milk production: daily totals and top producers"
+        },
+        {
+          "img": "finance",
+          "label": "Finance",
+          "alt": "Finance: income, expenses, net profit and cash flow"
+        },
+        {
+          "img": "calendar",
+          "label": "Schedule",
+          "alt": "Schedule: monthly view with calving, heat and vet check markers"
+        },
+        {
+          "img": "tasks",
+          "label": "Daily tasks",
+          "alt": "Tasks for the selected day: heat observations with completion marks"
+        }
+      ]
     },
     "audience": {
       "eyebrow": "Who it is for",

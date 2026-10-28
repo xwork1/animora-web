@@ -11,7 +11,8 @@ Diller uygulamayla aynıdır: `tr` (varsayılan, kökte) ve `en` (`/en/` altınd
   - Biçim: `## bolum-id | Bölüm başlığı` satırı ve altında HTML.
   - Yer tutucular: `{{controller}}` (veri sorumlusu kutusu), `{{email}}`, `{{emailAddr}}`, `{{url:privacy}}` (geçerli dildeki sayfa adresi).
 - Dil dışı ayarlar (site adresi, iletişim e-postası, sayfa yolları): `src/config.mjs`
-- Şablonlar: `build.mjs` (sayfa iskeleti), `src/home.mjs` (ana sayfa), `src/ui.mjs` (ikonlar, telefon çizimleri)
+- Şablonlar: `build.mjs` (sayfa iskeleti), `src/home.mjs` (ana sayfa), `src/ui.mjs` (ikonlar, telefon çerçevesi)
+- Uygulama ekran görüntüleri: `src/screens/{tr,en}/*-{360,720}.webp` (dil başına ayrı set). Yeniden üretmek için: `python scripts/make-screens.py <kaynak>` (kaynakta `tr/` ve `en/` altında 1440x3200 PNG; durum ve hareket çubukları kırpılır). Hangi görüntünün nerede kullanıldığı ve alt metinleri `locales/{dil}.json` → `home.hero.shot`, `home.spotlight.items`, `home.screens.items` alanlarındadır.
 
 Yeni dil eklemek için: `locales/{dil}.json` ve `content/{dil}/` oluşturun, `src/config.mjs` içindeki `LANGS` ve `ROUTES`'a ekleyin.
 

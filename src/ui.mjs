@@ -1,4 +1,4 @@
-// Ortak SVG ikonları ve telefon ekranı temsilleri.
+// Ortak SVG ikonları ve uygulama ekran görüntüsü (telefon çerçevesi) yardımcıları.
 
 const stroke = (d) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
@@ -23,6 +23,8 @@ const icons = {
   radio: stroke('<path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5M19.1 4.9C23 8.8 23 15.1 19.1 19"/><circle cx="12" cy="12" r="2"/>'),
   mail: stroke('<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>'),
   help: stroke('<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/>'),
+  chevL: stroke('<path d="m15 18-6-6 6-6"/>'),
+  chevR: stroke('<path d="m9 18 6-6-6-6"/>'),
   trash: stroke('<path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>'),
   apple: `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.96-.74 1.39 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.39-.92-2.41-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>`,
   play: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 2.4 13.6 12l-9.4 9.6c-.3-.2-.5-.6-.5-1V3.4c0-.4.2-.8.5-1z" fill="#34A853"/><path d="m16.8 8.8-3.2 3.2-9.4-9.6c.3-.2.8-.2 1.2 0z" fill="#FBBC04"/><path d="M16.8 15.2 5.4 21.6c-.4.2-.9.2-1.2 0l9.4-9.6z" fill="#EA4335"/><path d="m20.6 13-3.8 2.2-3.2-3.2 3.2-3.2 3.8 2.2c.9.5.9 1.5 0 2z" fill="#4285F4"/></svg>`,
@@ -30,65 +32,11 @@ const icons = {
 
 export const icon = (name) => icons[name];
 
-const nav = (labels, active) =>
-  `<div class="s-nav">${labels.map((l, i) => `<span class="${i === active ? 'on' : ''}"><i></i>${l}</span>`).join('')}</div>`;
-
-const bars = (values, on) =>
-  `<div class="s-bars">${values.map((v, i) => `<span class="${i === on ? 'on' : ''}" style="height:${v}%"></span>`).join('')}</div>`;
-
-// Ekran temsilleri: uygulama arayüzünün sadeleştirilmiş HTML çizimleri.
-// Tüm metin ve örnek değerler locales/{lang}.json içindeki home.mock alanından gelir.
-const sm = (name) => icons[name].replace('<svg', '<svg width="13" height="13"');
-
-export function phoneDashboard(x, navLabels) {
-  return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
-  <div class="s-top"><div><div class="s-hello">${x.hello}</div><div class="s-title">${x.farm}</div></div><div class="s-bell" style="color:#4e8a3e">${sm('bell')}</div></div>
-  <div class="s-grid">
-    <div class="s-card"><div class="s-ico" style="background:#e2eedb;color:#3b6e2e">${sm('tag')}</div><div class="s-big">${x.animalsValue}</div><div class="s-muted">${x.animals}</div></div>
-    <div class="s-card"><div class="s-ico" style="background:#dceaf5;color:#2f7fb8">${sm('drop')}</div><div class="s-big">${x.milkValue}</div><div class="s-muted">${x.milk}</div></div>
-  </div>
-  <div class="s-label">${x.tasks}</div>
-  <div class="s-row"><div class="s-ico" style="background:#f6dedb;color:#b8473f">${sm('syringe')}</div><div class="s-grow"><b>${x.t1}</b><span class="s-muted">${x.t1s}</span></div><span class="s-tag" style="background:#f6dedb;color:#b8473f">${x.today}</span></div>
-  <div class="s-row"><div class="s-ico" style="background:#ede0f4;color:#8a4fae">${sm('heart')}</div><div class="s-grow"><b>${x.t2}</b><span class="s-muted">${x.t2s}</span></div><span class="s-tag" style="background:#f6e7c8;color:#9a6a17">${x.tomorrow}</span></div>
-  <div class="s-row"><div class="s-ico" style="background:#f6e7c8;color:#9a6a17">${sm('wheat')}</div><div class="s-grow"><b>${x.t3}</b><span class="s-muted">${x.t3s}</span></div><span class="s-tag" style="background:#e2eedb;color:#3b6e2e">${x.ok}</span></div>
-  ${nav(navLabels, 0)}
-</div></div>`;
-}
-
-export function phoneMilk(x, navLabels) {
-  return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
-  <div><div class="s-hello" style="color:#4e8a3e;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
-  <div class="s-hero"><div class="s-muted">${x.total}</div><div class="s-big" style="font-size:24px">${x.totalValue}</div><div class="s-muted">${x.target}</div></div>
-  <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.avg}</div><div class="s-big" style="font-size:17px">${x.avgValue}</div></div>
-    <div class="s-card"><div class="s-muted">${x.quality}</div><div class="s-big" style="font-size:13px">${x.qualityValue}</div><div class="s-muted">${x.fatProt}</div></div>
-  </div>
-  <div class="s-card"><div class="s-label">${x.weekly}</div>${bars([62, 70, 66, 78, 84, 74, 80], 4)}<div class="s-days">${x.days.map((d) => `<span>${d}</span>`).join('')}</div></div>
-  ${nav(navLabels, 2)}
-</div></div>`;
-}
-
-export function phoneRepro(x, navLabels) {
-  return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
-  <div><div class="s-hello" style="color:#8a4fae;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
-  <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.pregnant}</div><div class="s-big">${x.pregnantValue}</div></div>
-    <div class="s-card"><div class="s-muted">${x.dueSoon}</div><div class="s-big">${x.dueSoonValue}</div></div>
-  </div>
-  ${x.rows.map((r) => `<div class="s-card"><div style="display:flex;justify-content:space-between"><b>${r.id}</b><span class="s-tag" style="background:#ede0f4;color:#8a4fae">${r.day}</span></div><div class="s-muted">${r.text}</div><div class="s-progress"><span style="width:${r.progress}%"></span></div></div>`).join('')}
-  ${nav(navLabels, 1)}
-</div></div>`;
-}
-
-export function phoneFinance(x, navLabels) {
-  return `<div class="phone" role="img" aria-label="${x.aria}"><div class="screen">
-  <div><div class="s-hello" style="color:#2f7fb8;font-weight:600">${x.eyebrow}</div><div class="s-title">${x.title}</div></div>
-  <div class="s-card" style="background:#1f3a1a;color:#eef3e8"><div class="s-muted" style="color:#b9c8b0">${x.net}</div><div class="s-big" style="font-size:22px">${x.netValue}</div><div class="s-muted" style="color:#b9c8b0">${x.period}</div></div>
-  <div class="s-grid">
-    <div class="s-card"><div class="s-muted">${x.income}</div><div class="s-big" style="font-size:15px;color:#3b6e2e">${x.incomeValue}</div></div>
-    <div class="s-card"><div class="s-muted">${x.expense}</div><div class="s-big" style="font-size:15px;color:#b8473f">${x.expenseValue}</div></div>
-  </div>
-  ${x.rows.map((r) => `<div class="s-row"><div class="s-grow"><b>${r.title}</b><span class="s-muted">${r.text}</span></div><b style="color:${r.positive ? '#3b6e2e' : '#b8473f'}">${r.amount}</b></div>`).join('')}
-  ${nav(navLabels, 3)}
-</div></div>`;
+// Uygulama ekran görüntüsü: telefon çerçevesi içinde 360w/720w WebP (scripts/make-screens.py üretir).
+// Görüntüler 360x758 oranındadır; alt metin locales/{lang}.json içinden gelir.
+export const SHOT = { w: 360, h: 758 };
+export function phoneShot(lang, img, alt, sizes = '(max-width: 520px) 236px, 280px', eager = false) {
+  const base = `/assets/screens/${lang}/${img}`;
+  const load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
+  return `<div class="device"><img src="${base}-360.webp" srcset="${base}-360.webp 360w, ${base}-720.webp 720w" sizes="${sizes}" width="${SHOT.w}" height="${SHOT.h}" alt="${alt}" ${load} decoding="async"></div>`;
 }
