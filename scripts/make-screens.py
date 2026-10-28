@@ -10,10 +10,8 @@ TOP, BOTTOM = 110, 60
 WIDTHS = (360, 720)
 
 # Dil başına kullanılan görüntüler: kaynak dosya -> çıktı adı
-SETS = {
-    'tr': {'01': 'herd', '02': 'animal', '03': 'calendar', '04': 'tasks', '05': 'feed', '07': 'paddocks'},
-    'en': {'02': 'animal', '03': 'calendar', '04': 'tasks', '05': 'health', '06': 'milk', '07': 'finance'},
-}
+ALL = {'01': 'herd', '02': 'animal', '03': 'calendar', '04': 'tasks', '05': 'health', '06': 'milk', '07': 'finance'}
+SETS = {'tr': ALL, 'en': ALL}
 
 for lang, files in SETS.items():
     (OUT / lang).mkdir(parents=True, exist_ok=True)

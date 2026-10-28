@@ -254,39 +254,39 @@
           ]
         },
         {
-          "img": "calendar",
-          "alt": "Takvim ekranı: doğum, kızgınlık ve veteriner kontrolü işaretli aylık görünüm",
-          "eyebrow": "Takvim",
-          "title": "Yaklaşan işleri kaçırmayın",
-          "text": "Beklenen doğumlar, kızgınlık ve tohumlama, veteriner kontrolleri takvimde renkli işaretlerle görünür. Bir güne dokunun, o günün görevlerini görün ve tamamlayın.",
+          "img": "health",
+          "alt": "Sağlık paneli ekranı: aktif tedaviler, bekleyen aşılar ve süt arınma sayısı",
+          "eyebrow": "Sağlık",
+          "title": "Tedavi, aşı ve arınma takibi",
+          "text": "Aktif tedavileri, bekleyen aşıları ve sütü ayrılması gereken hayvanları tek bakışta görün. Aşı kaydını ve tedavi protokollerini aynı panelden yönetin; günün sağlık programı da burada.",
           "points": [
-            "Renk kodlu etkinlikler",
-            "Günün görevleri tek listede",
-            "Zamanında hatırlatma bildirimleri"
+            "Süt arınma uyarıları",
+            "Hızlı aşı kaydı",
+            "Tedavi protokolleri"
           ]
         },
         {
-          "img": "feed",
-          "alt": "Yem kütüphanesi ekranı: yemlerin besin değerleri ve kilogram fiyatları",
-          "eyebrow": "Yem ve rasyon",
-          "title": "Yem kütüphaneniz ve rasyon hesabı",
-          "text": "Yemlerinizi enerji, kuru madde, ham protein ve kilogram fiyatıyla kaydedin; rasyon hesaplayıcıyla hayvan grubunuza uygun besleme planını hazırlayın.",
+          "img": "milk",
+          "alt": "Süt üretimi ekranı: toplam süt, inek başı verim ve en çok süt veren hayvanlar",
+          "eyebrow": "Süt üretimi",
+          "title": "Günlük verim ve en çok süt verenler",
+          "text": "Sağım kayıtlarını hayvan veya sürü bazında girin; toplam sütü, inek başı ortalamayı ve sağmal inek sayısını günlük ya da haftalık izleyin.",
           "points": [
-            "Kaba ve kesif yem ayrımı",
-            "Besin değerleri ve birim fiyat",
-            "Rasyon hesaplayıcı"
+            "Toplam ve inek başı verim",
+            "Günlük ve haftalık görünüm",
+            "En çok süt verenler sıralaması"
           ]
         },
         {
-          "img": "paddocks",
-          "alt": "Padoklar ekranı: grupların kapasite ve doluluk oranları",
-          "eyebrow": "Padok ve gruplar",
-          "title": "Ahırınızın düzeni bir bakışta",
-          "text": "Padok ve grupları oluşturun, kapasite ve doluluk oranını izleyin; buzağı, doğum ve gebe bölmelerini düzenli tutun.",
+          "img": "finance",
+          "alt": "Finans ekranı: gelir, gider, net kâr ve nakit akışı grafiği",
+          "eyebrow": "Finans",
+          "title": "Gelir, gider ve nakit akışı",
+          "text": "Gelir ve giderleri kategorilere ayırarak kaydedin; net kârı hafta, ay veya yıl bazında izleyin, hayvan başına kârlılığı görün.",
           "points": [
-            "Kapasite ve doluluk takibi",
-            "Aktif ve dinlenen padoklar",
-            "Gruplara göre filtreleme"
+            "Haftalık, aylık ve yıllık toplamlar",
+            "Nakit akışı grafiği",
+            "Hayvan başına kâr ve zarar"
           ]
         }
       ]
@@ -312,6 +312,21 @@
           "alt": "Hayvan detayı: aktif tedavi, doz takibi ve diğer bilgiler"
         },
         {
+          "img": "health",
+          "label": "Sağlık",
+          "alt": "Sağlık paneli: aktif tedaviler, bekleyen aşılar ve günün programı"
+        },
+        {
+          "img": "milk",
+          "label": "Süt",
+          "alt": "Süt üretimi: günlük toplamlar ve en çok süt veren hayvanlar"
+        },
+        {
+          "img": "finance",
+          "label": "Finans",
+          "alt": "Finans: yıllık gelir, gider, net kâr ve nakit akışı"
+        },
+        {
           "img": "calendar",
           "label": "Takvim",
           "alt": "Takvim: aylık görünümde doğum, kızgınlık ve kontrol işaretleri"
@@ -320,16 +335,6 @@
           "img": "tasks",
           "label": "Günün görevleri",
           "alt": "Seçilen günün görevleri: kızgınlık gözlemleri ve tamamlama işaretleri"
-        },
-        {
-          "img": "feed",
-          "label": "Yem kütüphanesi",
-          "alt": "Yem kütüphanesi: yem türleri, besin değerleri ve fiyatlar"
-        },
-        {
-          "img": "paddocks",
-          "label": "Padoklar",
-          "alt": "Padok grupları: kapasite ve doluluk oranları"
         }
       ]
     },
