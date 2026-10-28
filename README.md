@@ -10,6 +10,7 @@ Diller uygulamayla aynıdır: `tr` (varsayılan, kökte) ve `en` (`/en/` altınd
 - Yasal sayfa gövdeleri: `content/{tr,en}/{privacy,kvkk,terms,deleteAccount,support,cookies}.html`
   - Biçim: `## bolum-id | Bölüm başlığı` satırı ve altında HTML.
   - Yer tutucular: `{{controller}}` (veri sorumlusu kutusu), `{{email}}`, `{{emailAddr}}`, `{{url:privacy}}` (geçerli dildeki sayfa adresi).
+- Önbellek: `site.css`, `site.js` ve ekran görüntüleri derlemede içerik özetli adla yayımlanır (`site.<özet>.css`, `src/assets.mjs`); nginx bunları 1 yıl, `immutable` önbelleğe alır. og görselleri, ikonlar ve `site.webmanifest` sabit adlıdır.
 - Dil dışı ayarlar (site adresi, iletişim e-postası, sayfa yolları): `src/config.mjs`
 - Şablonlar: `build.mjs` (sayfa iskeleti), `src/home.mjs` (ana sayfa), `src/ui.mjs` (ikonlar, telefon çerçevesi)
 - Uygulama ekran görüntüleri: `src/screens/{tr,en}/*-{360,720}.webp` (dil başına ayrı set). Yeniden üretmek için: `python scripts/make-screens.py <kaynak>` (kaynakta `tr/` ve `en/` altında 1440x3200 PNG; durum ve hareket çubukları kırpılır). Hangi görüntünün nerede kullanıldığı ve alt metinleri `locales/{dil}.json` → `home.hero.shot`, `home.spotlight.items`, `home.screens.items` alanlarındadır.

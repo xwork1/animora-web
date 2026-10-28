@@ -1,11 +1,12 @@
 // Animora tanıtım sitesi için bağımlılıksız statik site üreticisi.
 // Kullanım: node build.mjs  ->  dist/ klasörüne HTML çıktısı yazar.
 // Şablonlar metin içermez: arayüz metinleri locales/{lang}.json, yasal içerik content/{lang}/*.html.
-import { mkdirSync, writeFileSync, copyFileSync, cpSync, readdirSync, readFileSync, rmSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { mkdirSync, writeFileSync, copyFileSync, readdirSync, readFileSync, rmSync } from 'node:fs';
+import { join, dirname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE, EMAIL, LANGS, DEFAULT_LANG, ROUTES, LEGAL_PAGES, FOOTER_LEGAL, NOT_FOUND_FILE } from './src/config.mjs';
-import { icon } from './src/ui.mjs';
+import { icon, shotSrc, shotSrcset } from './src/ui.mjs';
+import { asset, hashedName } from './src/assets.mjs';
 import { homeBody } from './src/home.mjs';
 
 const root = dirname(fileURLToPath(import.meta.url));
@@ -115,8 +116,8 @@ ${others.map((l) => `<meta property="og:locale:alternate" content="${locales[l].
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
-${key === 'home' ? `<link rel="preload" as="image" type="image/webp" href="/assets/screens/${lang}/${t.home.hero.shot.img}-360.webp" imagesrcset="/assets/screens/${lang}/${t.home.hero.shot.img}-360.webp 360w, /assets/screens/${lang}/${t.home.hero.shot.img}-720.webp 720w" imagesizes="(max-width: 520px) 256px, 300px" fetchpriority="high">` : ''}
-<link rel="stylesheet" href="/assets/site.css">
+${key === 'home' ? `<link rel="preload" as="image" type="image/webp" href="${shotSrc(lang, t.home.hero.shot.img, 360)}" imagesrcset="${shotSrcset(lang, t.home.hero.shot.img)}" imagesizes="(max-width: 520px) 256px, 300px" fetchpriority="high">` : ''}
+<link rel="stylesheet" href="${asset('site.css')}">
 ${jsonLd}
 </head>
 <body>
@@ -144,7 +145,7 @@ ${body}
     <div class="foot-bottom"><span>${t.site.copyright.replace('{year}', year)}</span><span>${t.site.by}</span></div>
   </div>
 </footer>
-<script src="/assets/site.js" defer></script>
+<script src="${asset('site.js')}" defer></script>
 </body>
 </html>
 `;
@@ -178,9 +179,14 @@ for (const lang of LANGS) {
 }
 
 for (const f of readdirSync(join(root, 'src', 'fonts'))) copyFileSync(join(root, 'src', 'fonts', f), join(out, 'assets', 'fonts', f));
-for (const f of ['site.css', 'site.js', ...LANGS.map((l) => `og-${l}.png`)]) copyFileSync(join(root, 'src', f), join(out, 'assets', f));
-// Uygulama ekran görüntüleri (dil başına): src/screens/{lang}/*.webp -> /assets/screens/{lang}/
-cpSync(join(root, 'src', 'screens'), join(out, 'assets', 'screens'), { recursive: true });
+// og görselleri sabit adla (dış servisler bu adresi bilir); CSS, JS ve ekran görüntüleri içerik özetli adla.
+for (const f of LANGS.map((l) => `og-${l}.png`)) copyFileSync(join(root, 'src', f), join(out, 'assets', f));
+const hashed = ['site.css', 'site.js', ...readdirSync(join(root, 'src', 'screens'), { recursive: true }).filter((f) => f.endsWith('.webp')).map((f) => `screens/${f.split(sep).join('/')}`)];
+for (const f of hashed) {
+  const dst = join(out, 'assets', hashedName(f));
+  mkdirSync(dirname(dst), { recursive: true });
+  copyFileSync(join(root, 'src', f), dst);
+}
 // İkonlar hem /assets/ altında (HTML ve manifest bağlantıları) hem kökte (tarayıcıların varsayılan arama yolu) sunulur.
 const ICONS = ['favicon-48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png'];
 for (const f of ICONS) {

@@ -1,4 +1,5 @@
 // Ortak SVG ikonları ve uygulama ekran görüntüsü (telefon çerçevesi) yardımcıları.
+import { asset } from './assets.mjs';
 
 const stroke = (d) =>
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
@@ -33,10 +34,11 @@ const icons = {
 export const icon = (name) => icons[name];
 
 // Uygulama ekran görüntüsü: telefon çerçevesi içinde 360w/720w WebP (scripts/make-screens.py üretir).
-// Görüntüler 360x758 oranındadır; alt metin locales/{lang}.json içinden gelir.
+// Görüntüler 360x758 oranındadır; alt metin locales/{lang}.json içinden gelir. Adresler içerik özetlidir (src/assets.mjs).
 export const SHOT = { w: 360, h: 758 };
+export const shotSrc = (lang, img, w) => asset(`screens/${lang}/${img}-${w}.webp`);
+export const shotSrcset = (lang, img) => `${shotSrc(lang, img, 360)} 360w, ${shotSrc(lang, img, 720)} 720w`;
 export function phoneShot(lang, img, alt, sizes = '(max-width: 520px) 236px, 280px', eager = false) {
-  const base = `/assets/screens/${lang}/${img}`;
   const load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
-  return `<div class="device"><img src="${base}-360.webp" srcset="${base}-360.webp 360w, ${base}-720.webp 720w" sizes="${sizes}" width="${SHOT.w}" height="${SHOT.h}" alt="${alt}" ${load} decoding="async"></div>`;
+  return `<div class="device"><img src="${shotSrc(lang, img, 360)}" srcset="${shotSrcset(lang, img)}" sizes="${sizes}" width="${SHOT.w}" height="${SHOT.h}" alt="${alt}" ${load} decoding="async"></div>`;
 }
